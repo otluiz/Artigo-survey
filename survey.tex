@@ -1,96 +1,4 @@
-
-%% bare_conf_compsoc.tex
-%% V1.4a
-%% 2014/09/17
-%% by Michael Shell
-%% See:
-%% http://www.michaelshell.org/
-%% for current contact information.
-%%
-%% This is a skeleton file demonstrating the use of IEEEtran.cls
-%% (requires IEEEtran.cls version 1.8s or later) with an IEEE Computer
-%% Society conference paper.
-%%
-%% Support sites:
-%% http://www.michaelshell.org/tex/ieeetran/
-%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
-%% and
-%% http://www.ieee.org/
-
-%%*************************************************************************
-%% Legal Notice:
-%% This code is offered as-is without any warranty either expressed or
-%% implied; without even the implied warranty of MERCHANTABILITY or
-%% FITNESS FOR A PARTICULAR PURPOSE! 
-%% User assumes all risk.
-%% In no event shall IEEE or any contributor to this code be liable for
-%% any damages or losses, including, but not limited to, incidental,
-%% consequential, or any other damages, resulting from the use or misuse
-%% of any information contained here.
-%%
-%% All comments are the opinions of their respective authors and are not
-%% necessarily endorsed by the IEEE.
-%%
-%% This work is distributed under the LaTeX Project Public License (LPPL)
-%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
-%% distributed and modified. A copy of the LPPL, version 1.3, is included
-%% in the base LaTeX documentation of all distributions of LaTeX released
-%% 2003/12/01 or later.
-%% Retain all contribution notices and credits.
-%% ** Modified files should be clearly indicated as such, including  **
-%% ** renaming them and changing author support contact information. **
-%%
-%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
-%%                    bare_conf.tex, bare_jrnl.tex, bare_conf_compsoc.tex,
-%%                    bare_jrnl_compsoc.tex, bare_jrnl_transmag.tex
-%%*************************************************************************
-
-
-% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
-% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
-% *** with production work. IEEE's font choices and paper sizes can       ***
-% *** trigger bugs that do not appear when using other class files.       ***                          ***
-% The testflow support page is at:
-% http://www.michaelshell.org/tex/testflow/
-
-
-
 \documentclass[conference,compsoc]{IEEEtran}
-% Some/most Computer Society conferences require the compsoc mode option,
-% but others may want the standard conference format.
-%
-% If IEEEtran.cls has not been installed into the LaTeX system files,
-% manually specify the path to it like:
-% \documentclass[conference,compsoc]{../sty/IEEEtran}
-
-
-
-
-
-% Some very useful LaTeX packages include:
-% (uncomment the ones you want to load)
-
-
-% *** MISC UTILITY PACKAGES ***
-%
-%\usepackage{ifpdf}
-% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
-% compilation based on whether the output is pdf or dvi.
-% usage:
-% \ifpdf
-%   % pdf code
-% \else
-%   % dvi code
-% \fi
-% The latest version of ifpdf.sty can be obtained from:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
-% Also, note that IEEEtran.cls V1.7 and later provides a builtin
-% \ifCLASSINFOpdf conditional that works the same way.
-% When switching from latex to pdflatex and vice-versa, the compiler may
-% have to be run twice to clear warning/error messages.
-
-
-
 
 
 
@@ -106,50 +14,27 @@
 \fi
 % cite.sty was written by Donald Arseneau
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off
-% such as if a citation ever needs to be enclosed in parenthesis.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 5.0 (2009-03-20) and later if using hyperref.sty.
-% The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
-% The documentation is contained in the cite.sty file itself.
-%
-% Note that some packages require special options to format as the Computer
-% Society requires. In particular, Computer Society  papers do not use
-% compressed citation ranges as is done in typical IEEE papers
-% (e.g., [1]-[4]). Instead, they list every citation separately in order
-% (e.g., [1], [2], [3], [4]). To get the latter we need to load the cite
-% package with the nocompress option which is supported by cite.sty v4.0
-% and later.
-
-
-
 
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+   \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
+   \graphicspath{{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+   \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
   % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
   % will default to the driver specified in the system graphics.cfg if no
   % driver is specified.
-  % \usepackage[dvips]{graphicx}
+   \usepackage[dvips]{graphicx}
   % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
+   \graphicspath{{../eps/}}
   % and their extensions so you won't have to specify these with
   % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
+   \DeclareGraphicsExtensions{.eps}
 \fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
@@ -159,155 +44,10 @@
 % Another good source of documentation is "Using Imported Graphics in
 % LaTeX2e" by Keith Reckdahl which can be found at:
 % http://www.ctan.org/tex-archive/info/epslatex/
-%
-% latex, and pdflatex in dvi mode, support graphics in encapsulated
-% postscript (.eps) format. pdflatex in pdf mode supports graphics
-% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
-% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
-% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
-% well as large increases in file sizes.
-%
-% You can find documentation about the pdfTeX application at:
-% http://www.tug.org/applications/pdftex
 
 
-
-
-
-% *** MATH PACKAGES ***
-%
-%\usepackage[cmex10]{amsmath}
-% A popular package from the American Mathematical Society that provides
-% many useful and powerful commands for dealing with mathematics. If using
-% it, be sure to load this package with the cmex10 option to ensure that
-% only type 1 fonts will utilized at all point sizes. Without this option,
-% it is possible that some math symbols, particularly those within
-% footnotes, will be rendered in bitmap form which will result in a
-% document that can not be IEEE Xplore compliant!
-%
-% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
-% thus preventing page breaks from occurring within multiline equations. Use:
-%\interdisplaylinepenalty=2500
-% after loading amsmath to restore such page breaks as IEEEtran.cls normally
-% does. amsmath.sty is already installed on most LaTeX systems. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
-
-
-
-
-
-% *** SPECIALIZED LIST PACKAGES ***
-%
-%\usepackage{algorithmic}
-% algorithmic.sty was written by Peter Williams and Rogerio Brito.
-% This package provides an algorithmic environment fo describing algorithms.
-% You can use the algorithmic environment in-text or within a figure
-% environment to provide for a floating algorithm. Do NOT use the algorithm
-% floating environment provided by algorithm.sty (by the same authors) or
-% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
-% algorithm float types and packages that provide these will not provide
-% correct IEEE style captions. The latest version and documentation of
-% algorithmic.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
-% There is also a support site at:
-% http://algorithms.berlios.de/index.html
-% Also of interest may be the (relatively newer and more customizable)
-% algorithmicx.sty package by Szasz Janos:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
-
-
-
-
-% *** ALIGNMENT PACKAGES ***
-%
-%\usepackage{array}
-% Frank Mittelbach's and David Carlisle's array.sty patches and improves
-% the standard LaTeX2e array and tabular environments to provide better
-% appearance and additional user controls. As the default LaTeX2e table
-% generation code is lacking to the point of almost being broken with
-% respect to the quality of the end results, all users are strongly
-% advised to use an enhanced (at the very least that provided by array.sty)
-% set of table tools. array.sty is already installed on most systems. The
-% latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/tools/
-
-
-% IEEEtran contains the IEEEeqnarray family of commands that can be used to
-% generate multiline equations as well as matrices, tables, etc., of high
-% quality.
-
-
-
-
-% *** SUBFIGURE PACKAGES ***
-%\ifCLASSOPTIONcompsoc
-%  \usepackage[caption=false,font=footnotesize,labelfont=sf,textfont=sf]{subfig}
-%\else
-%  \usepackage[caption=false,font=footnotesize]{subfig}
-%\fi
-% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
-% for subfigure.sty, the latter of which is no longer maintained and is
-% incompatible with some LaTeX packages including fixltx2e. However,
-% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
-% which will override IEEEtran.cls' handling of captions and this will result
-% in non-IEEE style figure/table captions. To prevent this problem, be sure
-% and invoke subfig.sty's "caption=false" package option (available since
-% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
-% handling of captions.
-% Note that the Computer Society format requires a sans serif font rather
-% than the serif font used in traditional IEEE formatting and thus the need
-% to invoke different subfig.sty package options depending on whether
-% compsoc mode has been enabled.
-%
 % The latest version and documentation of subfig.sty can be obtained at:
 % http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
-
-
-
-
-% *** FLOAT PACKAGES ***
-%
-%\usepackage{fixltx2e}
-% fixltx2e, the successor to the earlier fix2col.sty, was written by
-% Frank Mittelbach and David Carlisle. This package corrects a few problems
-% in the LaTeX2e kernel, the most notable of which is that in current
-% LaTeX2e releases, the ordering of single and double column floats is not
-% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
-% single column figure to be placed prior to an earlier double column
-% figure. The latest version and documentation can be found at:
-% http://www.ctan.org/tex-archive/macros/latex/base/
-
-
-%\usepackage{stfloats}
-% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
-% the ability to do double column floats at the bottom of the page as well
-% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
-% LaTeX2e). It also provides a command:
-%\fnbelowfloat
-% to enable the placement of footnotes below bottom floats (the standard
-% LaTeX2e kernel puts them above bottom floats). This is an invasive package
-% which rewrites many portions of the LaTeX2e float routines. It may not work
-% with other packages that modify the LaTeX2e float routines. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
-% Do not use the stfloats baselinefloat ability as IEEE does not allow
-% \baselineskip to stretch. Authors submitting work to the IEEE should note
-% that IEEE rarely uses double column equations and that authors should try
-% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
-% packages (also by Sigitas Tolusis) as IEEE does not format its papers in
-% such ways.
-% Do not attempt to use stfloats with fixltx2e as they are incompatible.
-% Instead, use Morten Hogholm'a dblfloatfix which combines the features
-% of both fixltx2e and stfloats:
-%
-% \usepackage{dblfloatfix}
-% The latest version can be found at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/dblfloatfix/
-
-
-
 
 % *** PDF, URL AND HYPERLINK PACKAGES ***
 %
@@ -319,17 +59,17 @@
 % Basically, \url{my_url_here}.
 
 
-
-
-% *** Do not adjust lengths that control margins, column widths, etc. ***
-% *** Do not use packages that alter fonts (such as pslatex).         ***
-% There should be no need to do such things with IEEEtran.cls V1.6 and later.
-% (Unless specifically asked to do so by the journal or conference you plan
-% to submit to, of course. )
-
-
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
+
+% Acentuação Português do Brasil
+\usepackage[utf8]{inputenc}
+
+% Permite que o \LaTeX\ fale em português
+\usepackage[brazil]{babel}
+
+%hiperlink de Internet
+\usepackage[pdftex]{hyperref}
 
 
 \begin{document}
@@ -340,21 +80,19 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Minerando dados em grandes quantidades - SURVEY}
+\title{Minerando dados em grandes quantidades - \textit{Big Data}: SURVEY}
 
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
 \author{\IEEEauthorblockN{Othon L. T. Oliveira}
-\IEEEauthorblockA{Escola Politécnica de Pernambuco\\Engenharia de Sistemas\\
+\IEEEauthorblockA{Mestrando em Engenharia de Sistemas\\
 Universidade de Pernambuco\\
-Recife, Pernambuco 50720-001 - Benfica\\
 Email: olto@ecomp.poli.br}
 \and
 \IEEEauthorblockN{Fernando B. L. Neto}
 \IEEEauthorblockA{Universidade de Pernambuco\\PhD - UK\\
-Recife, Pernambuco 50720-001 - Campus: Benfica\\
 Email: fbln@ecomp.poli.br}
 }
 
@@ -363,33 +101,6 @@ Email: fbln@ecomp.poli.br}
 % the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
 % after \documentclass
 
-% for over three affiliations, or if they all won't fit within the width
-% of the page (and note that there is less available width in this regard for
-% compsoc conferences compared to traditional conferences), use this
-% alternative format:
-% 
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3}, 
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
-
-
-
-
-% use for special paper notices
-%\IEEEspecialpapernotice{(Invited Paper)}
-
-
-
 
 % make the title area
 \maketitle
@@ -397,11 +108,10 @@ Email: fbln@ecomp.poli.br}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-The abstract goes here.
+This article intends to make an explanation of a new paradigm, the paradigm of unlimited information known as "Big Data" and to propose a solution for information retrieval for large spaces searches. Coupled to this paradigm and, reinforcing the concept that a new wave lies ahead for the Internet, where things concectam with things, we are not as well known Internet of Things   or simply IoT. The IoT is also known as the "third wave of the Internet," the acronym is confirmed because something like computers connected to home appliances, mobile phones connected to the traffic lights, getting weather information, accidents and congestion and to pass this information to the car, which warns the driver what's ahead. This is the reality that approaching and we intend to analyze in this article how the new players, things, interact with traditional actors humans.
 \end{abstract}
 
-% no keywords
-
+\textit{Keywords— Big Data, Map Reduce, Hadoop, Swarm Robotics, Swarm Inteligence, Deep Learning, Machine Learning, Particle Swarm Optimization, Ant Colony Optimization, Fish School Search}.
 
 
 
@@ -417,42 +127,222 @@ The abstract goes here.
 
 
 
-\section{Introdução}\label{arte:intro}
-As técnicas tradicionais de busca não são eficientes para resolver muitos problemas com grande complexidade, i.e. ordens de grandeza dantes inimagináveis, 
-especialmente quando possuem complexidade exponenciais, geradas por explosões combinatórias, felizmente, muitos desses problemas não-triviais 
-são eficientemente resolvidos por soluções naturais \cite{Swarm_Medeiros}.
+\section{Introdução}
 
-As heurísticas tornam os custos computacionais mais aceitáveis, na medida que não exploram todas as possibilidades,
-somente as mais prováveis de se encontrar a solução.
+Inferir sobre algum assunto agora poderá ser coisa do passado. Astrônomos atualizam suas descobertas numa base de 
+dados disponíveis para outros utilizarem, as ciências biológicas agora tem tradição em depositar seus avanços 
+científicos em repositórios públicos, redes sociais estão focadas na Web; Facebook, 
+LinkedIn, Microsoft, Tweeter e Yahoo sobrevivem coletando informações e repassando-as as empresas de telemarketing, 
+empresas de comércio eletrônico como Amazon, Submarino, Americanas.com, Magazine Luiza, utilizam essas informações 
+para vender mais e melhor, artigos científicos dos mais variados assuntos, das mais variadas áreas alimentam, 
+todos os dias,  com milhões de informações os \textit{Data Centers}, isso é o \textit{Big Data}.
 
-A natureza tem contribuído como inspiração de soluções para vários problemas de buscas, muitos, de maneira eficaz e elegante. 
-Essas soluções são encontradas nas mais diversas espécies de seres vivos. Por exemplo, as formigas quando vão em busca de alimentos, facilmente encontram um caminho 
-mais curto entre o ninho e a fonte de alimentos. Os cardumes de peixes executam movimentos aparentemente aleatórios mas, quando em grupo, são precisos para fuga dos predadores. 
-Nuvens de insetos quando em busca de novos locais para ninhos ou de alimento, inspiram os mais diversos algoritmos inteligentes baseados em populações de animais sociáveis, demonstrando 
-que há uma inteligência coletiva nessas populações, desenvolvida ao longo do tempo e das interações entre essas espécies sociáveis e o meio ambiente.
+"Em 2010 empresas e usuários armazenaram mais de 13 exabytes de novos dados" \cite{bigdataQualquerUm}.
 
-A classe de algoritmos proposta, metaforiza o comportamento de tais populações, e promoveu o desenvolvimento de uma Área que hoje é conhecida como computação bioinspirada 
-ou computação natural. Essa área investiga a relação entre a computação e a biologia (e mesmo a sociologia), estudando soluções de buscas e otimização, modelando problemas 
-mais eficientemente, baseado nas elegantes soluções encontradas pela natureza pensou-se que outras inspirações podem e devem originar novos algoritmos, dai a presente 
-proposta.
+Atrelada a essa produção massiva de dados, uma nova onda está sendo vislumbrada, é chamada de ''A terceira onda da Internet''
+, onde coisas se conectam com coisas; produtos nas gôndolas do supermercado com um novo tipo de etiqueta se conectam a uma 
+leitora de radio frequência à alguns metros de distância, contabilizando o total do estoque em segundos; o consumidor leva 
+seus produtos escolhidos ao caixa desse supermercado, pagando a conta sem precisar retirar qualquer produto do carrinho. 
+Ao introduzir esses produtos na geladeira, será possível saber quando expira a data de validade de determinados produtos, sem 
+precisar abri-la, e quando acabarem esses produtos, a própria geladeira informará ao supermercado a falta deles, reservando 
+o próximo rol de compras. Assim será essa onda de coisas conectadas, chamada de Internet das Coisas ou \textit{Internet of Things} (IoT),
+que fará com que os dados no \textit{Big Data} sofram explosão combinatória de informações multiplicando exponencialmente as dimensões deste.
 
-A essa classe de algorítimos bioinspirados chamamos de meta-heurísticas.
+Para fazer frente a esse novo paradigma e extrair informações com eficiência uma nova abordagem algorítmica se faz necessário. 
+As técnicas tradicionais de busca tradicionais não são eficientes para resolver muitos problemas com grande complexidade, i.e. ordens de grandeza 
+dantes inimagináveis, especialmente as que possuem complexidade exponenciais, geradas por explosões combinatórias, felizmente, 
+muitos desses problemas não-triviais são eficientemente resolvidos por soluções naturais \cite{Swarm_Medeiros}.
 
-\section{Grande volume de dados}\label{arte:bigdata}
+Para resolver a problemática da explosão combinatória de informações, são desenvolvidas técnicas para reduzir o tempo de busca, 
+tornando os custos computacionais mais aceitáveis, na medida que não exploram todas as possibilidades no caminho até a 
+solução procurada, somente o caminho curto onde é mais provável de se encontrar a solução, a essa técnica dá-se o nome de heurística.
 
-Inferir sobre algum assunto agora poderá ser coisa do passado. Com o grande volume de informações existentes no Big Data, astrônomos atualizam suas descobertas numa base 
-de dados disponíveis para outros utilizarem, as ciências biológicas agora tem tradição em depositar seus avanços científicos em repositórios públicos \cite{bigdataQualquerUm}.
-Redes sociais estão focadas na Web; Facebook, LinkedIn, Microsoft, Tweeter e Yahoo, livros eletrônicos; Amazon, Submarino,\textit{et cetera}, compras on-line; Americanas.com, Magazine Luiza,
-\textit{et cetera}, artigos científicos dos mais variados assuntos, alimentam, todos os dias, o que se passou a chamar Big Data.
+Contudo muitos problemas de busca com técnicas heurísticas tradicionais nem sempre encontram a solução num tempo computacional
+aceitável. Felizmente a natureza tem contribuído como inspiração de soluções para vários problemas de buscas, muitos, de maneira 
+eficaz e elegante. As meta-heurísticas são soluções encontradas nas mais diversas espécies de seres vivos, por exemplo, as formigas quando 
+vão em busca de alimentos, facilmente encontram um caminho mais curto entre o ninho e a fonte de alimentos, cardumes de peixes 
+executam movimentos aparentemente aleatórios mas, quando em grupo, são precisos para fuga dos predadores, bandos de pássaros 
+quando em busca de novos locais para ninhos ou de alimento, inspiram os mais diversos algoritmos inteligentes baseados em 
+populações de animais sociáveis, demonstrando que há uma inteligência coletiva nessas populações, desenvolvida ao longo do 
+tempo e das interações entre essas espécies sociáveis e o meio ambiente. Essa classe de algoritmos, metaforiza o comportamento 
+de tais populações, e promoveu o desenvolvimento de uma área que hoje é conhecida como computação bioinspirada ou computação 
+natural. Essa área investiga a relação entre a computação e a biologia (e mesmo a sociologia), estudando soluções de buscas 
+e otimização, modelando problemas mais eficientemente, baseado nas elegantes soluções encontradas pela natureza.
 
-"Em 2010 empresas e usuários armazenaram mais de 13 exabytes de novos dados" (\cite{bigdataQualquerUm}) \cite{bigdataQualquerUm}.
 
-Assim que a Internet das Coisas for uma ralidade, a explosão combinatória de coisas conectadas farão com que esse Big Data cresça de maneir assustadora
+\section{Objetivos}
+
+Este artigo do tipo Survey tem como objetivo analisar a problemática do Big Data e seus paradigmas apresentados atualmente. 
+Dentre esses podemos destacar o paradigma dos 5 V’s; Volume de dados, Velocidade para acessar esses dados, 
+Variedade de informações, Veracidade nos dados encontrados e Valor atribuído aos dados. 
+Dentre as mais diversas ferramentas existentes destacamos algumas já consagradas como Map Reduce, da ‘framework’ Hadoop,
+e sua congênere desenvolvida pelo Google. Essas são as mais conhecidas dos “aventureiros” que estão desbravando o ainda
+pouco conhecido Big Data. Não será uma tarefa trivial inferir e desenvolver novas ferramentas, pois o Big Data tem 
+assumido, nos mais recentes anos, proporções gigantescas como descrito na tabela 1
 
 
-Essas informações são dados estruturados e não estruturados (citar)
+%Tabela 1
 
-%\section{Mineração de dados}\label{arte:datamining}
+
+\begin{table}[htbp]
+\scriptsize
+\centering
+\caption{Volume de dados no mundo}
+\begin{tabular}{|p{6mm}|p{5mm}|p{16mm}|p{8mm}|}
+\hline
+Ano & Qtd & Unidade & Múltiplo \\
+\hline
+2000 & 800 & terabytes - TB & $10^{12}$ \\ \hline
+
+2006 & 160 & petabytes – PB & $10^{15}$ \\ \hline
+
+2009 & 500 & exabytes – EB & $10^{18}$ \\ \hline
+
+2012 & 2,7 & zettabytes - ZB & $10^{21}$ \\ \hline
+
+2020 & 35 & yottabytes - YB & $10^{24}$ \\ \hline
+
+\end{tabular}
+\end{table}
+
+
+\section{Plano de execução do Survey}
+
+Para executarmos este Survey, foram primeiramente definidas as seguintes etapas:
+
+\begin{enumerate}
+ \item[A.] Coleta dos dados;
+ \item[B.] Seleção dos artigos; 
+ \item[C.] Escolha dos Filtros;
+ \item[D.] Leitura dos artigos.
+\end{enumerate}
+
+\begin{enumerate}
+ \item[A.] Coleta dos dados\\
+ Para coletar os dados foram escolhidas seis (6) palavras chaves com relevância ao tema dentro do meio ambiente da pesquisa. Foram:
+  \begin{itemize}
+    \item “Data Mining and Swarm Inteligence”
+    \item “Data Mining Big Data”
+    \item “Data Mining Swarm Robotics”
+    \item “Deep Learning”
+    \item “Hadoop Map Reduce in Big Data”
+    \item “Map Reduce Big Data”
+  \end{itemize}
+
+
+ De posse das palavras-chave foram criadas planilhas, onde cada folha dessa planilha é representada por uma palavra chave. 
+ Incluiu-se no mínimo 30 artigos para cada planilha. 
+ Pretendeu-se, com essa arquitetura, construir rapidamente gráficos das mais diferentes matizes.
+  \begin{itemize}
+    \item Base pesquisada;
+    \item Data da publicação do artigo;
+    \item Aceito ou rejeitado;
+    \item Título do artigo;
+    \item País de origem do artigo.
+  \end{itemize}
+
+  Uma das ferramentas utilizadas para extrair os dados referentes às palavras-chave foi o programa Mendeley, especializado
+  em extrair dados de arquivos pdfs como os artigos, dissertações e teses. O Mendeley oferece uma opção para gerar dados 
+  extraídos em formato estruturado do tipo XML. A priori foi utilizado para gerar as planilhas, contudo, foi excluída essa
+  opção por não trazer grandes ganhos, talvez se fossem criadas macros para tratar esses arquivos XML ficassem mais ``limpos''
+  pois o que mais foi relevante para esta fase do Survey formaram as colunas de cada planilha:
+  A figura 1 mostra como está a planilha-Survey até este momento;
+  
+ 
+  \begin{figure}[!ht]
+  \centering %\centering % para centralizarmos a figura
+  \caption{Planilha}
+  \flushright
+  \includegraphics[width=0.4\textwidth]{Figuras/PlanilhaSrvey.png}
+%  \includegraphics[scale=0.35]{Figuras/PlanilhaSrvey.png}
+%  \label{Fig 1}
+  \end{figure}
+  
+  \item[B.] Seleção dos artigos\\
+  A seleção dos artigos foi primeiramente escolhida de forma qualitativa, pelas mais recentes publicações, 
+  dos últimos 5 anos, para ser mais exato entre 2010 e 2015. O segundo critério de seleção foi pelo órgão publicizador, 
+  haja vista os mais conhecidos tais como IEEE, Elsevier, Springer, e deles todos os jornais pertinentes, contudo
+  outras fontes foram consideradas como universidades, seminários mais conhecidos na área.
+
+  Outro critério de seleção foi o quantitativo. Para isso foi estabelecido o mínimo de 30 (trinta artigos) por palavra chave.
+  Dessa forma procuramos aproximar os dados coletados da distribuição normal padrão que por razões evidentes está amplamente
+  tabelada e é suprida por quase todos os software para construtores de gráficos.\\
+
+  \item[C.] Critérios de Inclusão/Exclusão \\
+  O critério de inclusão e exclusão foi baseado na leitura dos ``abstracts'' dos artigos. 
+  Devido a algumas palavras estarem muito na ``moda'' são citados em muitos artigos, apesar de conterem as palavras chaves,
+  mesmo assim não traziam qualquer relevância para a pesquisa. Dessa forma foi criada uma pasta chamada “Rejeitados” 
+  para onde foram movidos esses artigos.\\
+  Outro critério de exclusão foi a data mais antiga, anteriormente à 2010, com alguma exceção dos artigos clássicos da área.\\
+
+  \item[D.] Leitura dos artigos \\
+  A leitura dos artigo iniciou-se tão logo terminaram os critérios de de Inclusão/Exclusão.
+  Foram selecionados cerca de 100 artigos para serem lidos, não excetuando-se excluir mais algum que por ventura não 
+  tenham ficados ``presos'' na etapa anterior (C), dos filtros.
+  Segue uma tabela com as datas do plano de execução
+  
+  \begin{table}[htbp]
+  \scriptsize
+  \centering
+  \caption{Datas do Survey}
+  \begin{tabular}{|p{18mm}|p{8mm}|p{8mm}|p{8mm}|}
+  \hline
+  Data & A-Coleta & B-Seleção & C-Filtros \\
+  \hline
+  Abril a Junho & X & -- & -- \\ \hline
+  Junho e Julho & -- & X & X \\ \hline
+  Agosto & -- & -- & X \\ \hline
+
+  \end{tabular}
+  \end{table}
+
+
+\end{enumerate}
+
+\section{A Internet}
+
+Uma Internetwork ou simplesmente internet é a conexão entre mais de uma rede e hoje em dia a maioria das redes se encontram conectadas.  A Internet é um sistema de internetwork organizado e estruturado, a mais notável das internets, uma colaboração de mais de centenas de milhares de redes. Já World Wide Web (Grande Rede Mundial) é apenas um dos muitos serviços que funcionam dentro da Internet. 
+
+O acesso à Internet está condicionado a Provedores de Acesso (ISP), que se classificam em internacionais, que conectam países; nacionais (backbones criadas e mantidas por empresas especializads) ; regionais ligadas a outros ISPs, normalmente têm taxas de transmissão menores; e locais que se conectam a ISP regionais ou nacionais e oferecem serviços de conecção a usuários finais.
+
+
+\begin{figure}[!h]
+\centering
+%\centering % para centralizarmos a figura
+\caption{Internet}
+\includegraphics[width=50mm]{Figuras/internet_map.eps}
+%\label{figura 2}
+\end{figure}
+
+
+
+\section{Redes de Computadores}
+% no \IEEEPARstart
+Uma rede é um conjunto de dispositivos (nós) conectados por links (caminho de transferência) de comunicação.  Um nó pode ser um computador, uma impressora ou outro dispositivo de envio e/ou recepção de dados, que estejam conectados a outro nó da rede \cite{Forouzan}.
+
+Por mais simples e menor que seja, três critérios são considerados os mais importantes que uma rede deve atender: Desempenho, que envolve a capacidade de vazão (througput) e o atraso (delay); Confiabilidade, que envolve o tempo de recuperação quando falha e sua robustez caso haja alguma catástrofe; e Segurança, que envolve proteção ao acesso de dados e proteção contra danos e perdas \cite{Forouzan} \cite{Specialski}.
+
+
+
+\subsection{Categorias de Rede}
+Quanto à Categoria, as redes são classificadas em:
+\begin{enumerate}
+	\item[a.]\textbf{Redes pessoais (PAN) }	– Conectam dispositivos em uma pequena área, aproximadamente 1$m^2$;  
+	\item[b.]\textbf{Redes locais (LAN) } – são privadas, podem englobar desde um escritório a um campus universitário.  Alguns colocam a PAN nesta categoria de rede. As LANs são projetadas para compartilhamento de recursos computacionais;
+	\item[c.]\textbf{Redes geograficamente separadas (WAN)} - possibilitam transmissão de dados, imagens, áudio e vídeo por longas distâncias, áreas que podem compreender um país, um continente ou mesmo o mundo todo.  
+	\item[d.]\textbf{ Redes metropolitanas (MAN)} – rede de tamanho intermediário, entre LAN e WAN, abrangendo um distrito ou cidade. Normalmente usada para distribuir serviço de TV e Internet.
+\end{enumerate}
+
+
+\begin{figure}[!htb]
+\centering
+%\centering % para centralizarmos a figura
+\caption{Topologia de rede }
+\includegraphics[width=63mm]{Figuras/Topologies.eps}
+
+%\label{figura 3}
+\end{figure}
+
 
 
 \section{Enxame de partículas}\label{arte:enxames}
@@ -495,7 +385,9 @@ Onde $x_1(t)$ é a posição da partícula num determinado momento ''t''. O $x_i
 A velocidade da partícula é de acordo com a equação:
 
 \begin{equation}
-v_i(t+1) = v_i(t) + c_1r_1j(t)[Nbest - x_i(t)] + c_2r_2j[Lbest - x_i(t)]
+v_i(t+1) = v_i(t) + op_Nbest + op_Lbest 
+op_Nbest = c_1r_1j(t)[Nbest - x_i(t)] 
+op_Lbest = c_2r_2j[Lbest - x_i(t)]
 \end{equation}
 
 Onde $v_i(t)$ é a velocidade num momento ''t'' qualquer e $v_i(t+1)$ é a velocidade atual da partícula.
@@ -544,112 +436,40 @@ Bari(t) = \frac{\sum_{i=1}^{N}x_i(t)W_1(t)}{\sum_{i=1}^{N}x_i(t)}
 \end{equation}
 
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+
+\section{Arquiteturas atuais}
+
+Hadoop MapReduce é uma técnica recente, especialmente, projetado para o processamento de grandes conjuntos de dados distribuídos. Hadoop nasceu do Apache. O Apache é um servidor Web, o tal como o Hadoop. Servidores Web são computadores especialmente dedicados a traduzir programas feitos para Internet em página da Internet as quais pessoas possam ler, quando conectam-se `a Internet. MapReduce é um modelo de programação para expressar cálculo distribuído em quantidade maciça de
+dados e uma estrutura de execução para dados em larga escala e processamento em clusters de servidores. Foi originalmente desenvolvido pela Google e construído sobre o bem-conhecido
+princípios em paralelo e processamento distribuído.
+O Hadoop é a implementação de código aberto do MapReduce escrito em java que fornece, tolerância a falhas, escalável e confiável técnica de computação distribuída.
+O configurar o ambiente Hadoop envolve um grande número de parâmetros que são essenciais para alcançar um excelente desempenho. Ele permite que desenvolveres de aplicações distribuídas sem qualquer conhecimento possam programar computadores. 
+Um "Valor" e uma "chave" formam um par de dados, isso é a estrutura básica de dados do MapReduce. 
+Chaves e valores podem ser da forma de dados primitivos; como inteiros, ponto flutuante,  e bytes brutos ou podem ser estruturas arbitrárias e complexas (listas, tuplas matriz associativa, e outras)
+
+\section{Resultados esperados}
+
+Este Survey têm diversos propósitos preliminares e também conclusivos, para balizar nossa pesquisa, apontando o caminho
+mais promissor relacionado ao assunto escolhido, no nosso caso “Big Dada”. Um dos propósito é servir de referência científica
+a qualquer de busca por conhecimento científico, mostrando o trabalho que o pesquisador deve ter, o cuidado ao procurar 
+esse conhecimento, sem contaminar-se na “floresta” de artigos científicos, dissertações e teses ofertados e, disponíveis
+hodiernamente na Internet. 
+
+Após a conclusão deste Survey, pretende-se incluir, os dados encontrados, no capítulo 2 da dissertação, servindo também 
+de exemplo para todo mestrando que se “aventurar” na busca “indiscriminada” por artigos, deixando de lado uma parte 
+importante do seu trabalho que são os dados estatísticos dessa fase e que pode ter assim uma abordagem científica já na 
+fase inicial.
+A fase conclusiva, desse Survey, será a certeza de que o melhor caminho escolhido para o desenvolvimento das outras
+fases da dissertação foi baseado em métodos científicos, desde sua fase inicial, ficando disponíveis para outros pesquisadores 
+o ``como`` deve ser todo trabalho de busca por artigos científicos.
 
 
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure}
+\section{Conclusão}
 
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
-
-
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
-
-
-
-
-\section{Conclusion}
-The conclusion goes here.
-
-
-
+Devido à natureza da problemática ser as dimensões, o Big Data tem tornado-se um desfio hérculeo para quem envereda-se a desvendá-lo.
+Inferir sobre o Big Data é o que muitos pesquisadores têm feito recentemente, utilizando-se para isso das mais diferentes tecnologias a disposição; Hadoop ou \textit{Map Reduce} ou uma combinação dos dois, essas fronteiras vêm sendo desmistificadas aos poucos, mas ao mesmo tempo, novos desafios se fazem presentes, com a chegada da Internet das Coisas, onde tudo está conectado \cite{madeira}
+desde eletrodomésticos \cite{mayumi} a carros, sinais de trânsito, fazendo com que os \textit{smartphones} seja a ferramenta para se ter acesso a isso tudo. \cite{singer}
+Portanto estamos só no começo, no que está por vir, fazendo com que haja cada vez mais trabalhos nessa área e inspirações para novos algoritmos.
 
 % conference papers do not normally have an appendix
 
@@ -669,16 +489,6 @@ The authors would like to thank...
 
 
 
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
 % references section
 
 % can use a bibliography generated by BibTeX as a .bbl file
@@ -695,17 +505,94 @@ The authors would like to thank...
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-\bibitem{IEEEhowto:SRobotics}
-	H. ~Ahmed, and J. ~Glasgow,	\emph{Swarm intelligence: concepts, models and applications},
-	\relax School of Computing, Queen's University, Citeseer, 2012.
+\bibitem{bigdataQualquerUm}
+  H. V. Jagadish, J. Gehrke, A. Labrinidis, Y. Papakontantinou, J. M. Patel, R. Ramakrishnan and C. Shahabi
+  \emph{Exploring the inherent technical challenges in realizing the potential of Big Data},
+  journal:Comunication of the ACM, volume=57, numbe=r7, pages=86--96, month=July, year=2014
 
+  
+\bibitem{Swarm_Medeiros}
+Talles Henrique De Medeiros, Luís Fabrício Wanderley Góes, M. B.-B. C. E. I. M. (n.d.). 
+\emph{Computação Bioinspirada aplicada à Robótica}
+
+\bibitem{Forouzan}
+FOROUZAN, Behrouz A. Comunicação de Dados e Redes de Computadores. São Paulo: McGraw-Hill, 2008
+
+\bibitem{Specialski} 
+E. ~SPECIALSKI (1999).
+\emph{Gerência de redes de computadores e telecomunicações}
+
+\bibitem{SRobotics}
+H. ~Ahmed, and J. ~Glasgow,
+\emph{Swarm intelligence: concepts, models and applications},
+\relax School of Computing, Queen's University, Citeseer, 2012.
+
+\bibitem{chambers2014computer}
+W. D. Chambers (2014).
+\emph{Computer simulation of dental professionals as a moral community. Medicine, Health Care and Philosophy}
+\relax  17(3), 467–476.
+
+\bibitem{Kennedy1995}
+J. Kennedy and R. Eberhart (1995). 
+\emph{Particle swarm optimization. In Neural Networks, 1995. Proceedings.}
+IEEE International Conference on (Vol. 4, pp. 1942–1948 vol.4). http://doi.org/10.1109/ICNN.1995.488968
+
+
+\bibitem{Blum2005}
+C. Blum
+\emph{Ant colony optimization}
+booktitle: {Physics of Life Reviews},
+title: {{Ant colony optimization: Introduction and recent trends}},
+doi: {10.1016/j.plrev.2005.10.001},
+issn: {15710645},
+keywords: {Ant colony optimization,Discrete optimization,Hybridization},
+number: {4},
+pages: {353--373},
+volume: {2},
+year {2005}
+
+\bibitem{Dorigo2005}
+M. Dorigo and C. Blum,
+\emph{Ant colony optimization theory: A survey},
+doi: {10.1016/j.tcs.2005.05.020},
+isbn: {0304-3975},
+issn: {03043975},
+journal: {Theoretical Computer Science},
+keywords: {Ant colony optimization, Approximate algorithms, Combinatorial optimization, Convergence, Metaheuristics, Model-based search, Stochastic gradient descent},
+number: {2-3},
+pages: {243--278},
+volume: {344},
+year: {2005}
+
+
+\bibitem{Filho2008}
+Filho, Carmelo J A Bastos and Neto, Fernando B De Lima and Lins, Anthony J C C and Nascimento, Ant\^{o}nio I S and Lima, Mar\'{\i}lia P.
+booktitle: {Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics},
+\emph{A novel search algorithm based on fish school behavior},
+doi: {10.1109/ICSMC.2008.4811695},
+isbn: {978-1-4244-2383-5},
+issn: {1062922X},
+keywords: {Fish school,Search algorithms,Social behaviour,Swarm intelligence},
+pages: {2646--2651},
+year: {2008}
+
+
+\bibitem{madeira}
+Madeira, Lamont. Hoje a internet, amanhã os desafios da internet das coisas. 2011.
+
+\bibitem{mayumi}
+MAYUMI, Danielle. Computação nas nuvens – O futuro da internet. 2011.
+
+
+\bibitem{singer}
+SINGER, Talyta. TUDO CONECTADO: CONCEITOS E REPRESENTAÇÕES DA INTERNET DAS COISAS. 2012.
+Acessado em: 23 abril. 2015.
+\href{http://www.simsocial2012.ufba.br/modulos/submissao/Upload/44965.pdf} {Singer}
 
 
 \end{thebibliography}
+
 
 
 
