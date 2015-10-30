@@ -15,6 +15,9 @@
 % cite.sty was written by Donald Arseneau
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
 
+%######### citações modelo abnt 2 ############
+\usepackage[num]{abntex2cite}
+
 
 % *** GRAPHICS RELATED PACKAGES ***
 %
@@ -36,28 +39,9 @@
   % every instance of \includegraphics
    \DeclareGraphicsExtensions{.eps}
 \fi
-% graphicx was written by David Carlisle and Sebastian Rahtz. It is
-% required if you want graphics, photos, etc. graphicx.sty is already
-% installed on most LaTeX systems. The latest version and documentation
-% can be obtained at: 
-% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
-% Another good source of documentation is "Using Imported Graphics in
-% LaTeX2e" by Keith Reckdahl which can be found at:
-% http://www.ctan.org/tex-archive/info/epslatex/
 
-
-% The latest version and documentation of subfig.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
-
-% *** PDF, URL AND HYPERLINK PACKAGES ***
-%
-%\usepackage{url}
-% url.sty was written by Donald Arseneau. It provides better support for
-% handling and breaking URLs. url.sty is already installed on most LaTeX
-% systems. The latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/url/
-% Basically, \url{my_url_here}.
-
+\usepackage{graphicx} % para EPS
+\usepackage{subfig}
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
@@ -71,6 +55,11 @@
 %hiperlink de Internet
 \usepackage[pdftex]{hyperref}
 
+
+% Conta o número de páginas
+\usepackage{lastpage}
+\usepackage{setspace}
+\pagestyle{plain}
 
 \begin{document}
 %
@@ -108,10 +97,18 @@ Email: fbln@ecomp.poli.br}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-This article intends to make an explanation of a new paradigm, the paradigm of unlimited information known as "Big Data" and to propose a solution for information retrieval for large spaces searches. Coupled to this paradigm and, reinforcing the concept that a new wave lies ahead for the Internet, where things concectam with things, we are not as well known Internet of Things   or simply IoT. The IoT is also known as the "third wave of the Internet," the acronym is confirmed because something like computers connected to home appliances, mobile phones connected to the traffic lights, getting weather information, accidents and congestion and to pass this information to the car, which warns the driver what's ahead. This is the reality that approaching and we intend to analyze in this article how the new players, things, interact with traditional actors humans.
+Este artigo pretende fazer uma explanação de um novo paradigma; o paradigma da informação ilimitada, conhecido como "Big Data" e, propor uma solução para recuperação de informação para grandes espaços de buscas. Atrelado à este paradigma e, reforçando o conceito de que uma nova onda está à frente para a Internet, onde coisas se conectam com coisas, conhecida como Internet das coisas ou simplesmente IoT. A Internet das coisas é também conhecido como a "terceira onda da Internet", o entendimento seria algo como; computadores conectados a eletrodomésticos; telefones celulares ligados à semáforos, recebendo informações sobre o tempo, acidentes e congestionamento e, passar esta informação ao carro, que avisa o condutor que está à frente. Esta é a realidade que se aproxima e pretendemos analisar neste artigo como os novos ``atores'', ou coisas interagem com os atores humanos tradicionais.
 \end{abstract}
 
-\textit{Keywords— Big Data, Map Reduce, Hadoop, Swarm Robotics, Swarm Inteligence, Deep Learning, Machine Learning, Particle Swarm Optimization, Ant Colony Optimization, Fish School Search}.
+\vspace{0.1cm}
+
+\textit{\textbf{Palavras-chave: Big Data, Mapear e Reduzir, Hadoop, Enxame de robôs, Inteligência em enxames, Aprendizado em profundidade, Aprendizado de máquina, Otimização por enxame de partículas, Otimização por enxame de formigas, Pesquisa por cardume de peixes, Logística, Roteamento }}.
+
+\vspace{0.1cm}
+
+\textit{Abstract -- This paper intends to make an explanation of a new paradigm, the paradigm of unlimited information known as "Big Data" and to propose a solution for information retrieval for large spaces searches. Coupled to this paradigm and, reinforcing the concept that a new wave lies ahead for the Internet, where things connect with things, we are not as well known Internet of Things   or simply IoT. The IoT is also known as the "third wave of the Internet," the acronym is confirmed because something like computers connected to home appliances, mobile phones connected to the traffic lights, getting weather information, accidents and congestion and to pass this information to the car, which warns the driver what's ahead. This is the reality that approaching and we intend to analyze in this article how the new players, things, interact with traditional actors humans.}
+
+\textit{Keywords: Big Data, Map Reduce, Hadoop, Swarm Robotics, Swarm Intelligence, Deep Learning, Machine Learning, Particle Swarm Optimization, Ant Colony Optimization, Fish School Search, Logistic, Routing}.
 
 
 
@@ -137,16 +134,6 @@ empresas de comércio eletrônico como Amazon, Submarino, Americanas.com, Magazi
 para vender mais e melhor, artigos científicos dos mais variados assuntos, das mais variadas áreas alimentam, 
 todos os dias,  com milhões de informações os \textit{Data Centers}, isso é o \textit{Big Data}.
 
-"Em 2010 empresas e usuários armazenaram mais de 13 exabytes de novos dados" \cite{bigdataQualquerUm}.
-
-Atrelada a essa produção massiva de dados, uma nova onda está sendo vislumbrada, é chamada de ''A terceira onda da Internet''
-, onde coisas se conectam com coisas; produtos nas gôndolas do supermercado com um novo tipo de etiqueta se conectam a uma 
-leitora de radio frequência à alguns metros de distância, contabilizando o total do estoque em segundos; o consumidor leva 
-seus produtos escolhidos ao caixa desse supermercado, pagando a conta sem precisar retirar qualquer produto do carrinho. 
-Ao introduzir esses produtos na geladeira, será possível saber quando expira a data de validade de determinados produtos, sem 
-precisar abri-la, e quando acabarem esses produtos, a própria geladeira informará ao supermercado a falta deles, reservando 
-o próximo rol de compras. Assim será essa onda de coisas conectadas, chamada de Internet das Coisas ou \textit{Internet of Things} (IoT),
-que fará com que os dados no \textit{Big Data} sofram explosão combinatória de informações multiplicando exponencialmente as dimensões deste.
 
 Para fazer frente a esse novo paradigma e extrair informações com eficiência uma nova abordagem algorítmica se faz necessário. 
 As técnicas tradicionais de busca tradicionais não são eficientes para resolver muitos problemas com grande complexidade, i.e. ordens de grandeza 
@@ -157,58 +144,26 @@ Para resolver a problemática da explosão combinatória de informações, são 
 tornando os custos computacionais mais aceitáveis, na medida que não exploram todas as possibilidades no caminho até a 
 solução procurada, somente o caminho curto onde é mais provável de se encontrar a solução, a essa técnica dá-se o nome de heurística.
 
-Contudo muitos problemas de busca com técnicas heurísticas tradicionais nem sempre encontram a solução num tempo computacional
-aceitável. Felizmente a natureza tem contribuído como inspiração de soluções para vários problemas de buscas, muitos, de maneira 
-eficaz e elegante. As meta-heurísticas são soluções encontradas nas mais diversas espécies de seres vivos, por exemplo, as formigas quando 
+As meta-heurísticas são soluções encontradas nas mais diversas espécies de seres vivos, por exemplo, as formigas quando 
 vão em busca de alimentos, facilmente encontram um caminho mais curto entre o ninho e a fonte de alimentos, cardumes de peixes 
 executam movimentos aparentemente aleatórios mas, quando em grupo, são precisos para fuga dos predadores, bandos de pássaros 
 quando em busca de novos locais para ninhos ou de alimento, inspiram os mais diversos algoritmos inteligentes baseados em 
 populações de animais sociáveis, demonstrando que há uma inteligência coletiva nessas populações, desenvolvida ao longo do 
 tempo e das interações entre essas espécies sociáveis e o meio ambiente. Essa classe de algoritmos, metaforiza o comportamento 
-de tais populações, e promoveu o desenvolvimento de uma área que hoje é conhecida como computação bioinspirada ou computação 
+de tais populações, e promoveu o desenvolvimento de uma área que hoje é conhecida como computação bio inspirada ou computação 
 natural. Essa área investiga a relação entre a computação e a biologia (e mesmo a sociologia), estudando soluções de buscas 
 e otimização, modelando problemas mais eficientemente, baseado nas elegantes soluções encontradas pela natureza.
 
 
 \section{Objetivos}
 
-Este artigo do tipo Survey tem como objetivo analisar a problemática do Big Data e seus paradigmas apresentados atualmente. 
-Dentre esses podemos destacar o paradigma dos 5 V’s; Volume de dados, Velocidade para acessar esses dados, 
-Variedade de informações, Veracidade nos dados encontrados e Valor atribuído aos dados. 
-Dentre as mais diversas ferramentas existentes destacamos algumas já consagradas como Map Reduce, da ‘framework’ Hadoop,
-e sua congênere desenvolvida pelo Google. Essas são as mais conhecidas dos “aventureiros” que estão desbravando o ainda
-pouco conhecido Big Data. Não será uma tarefa trivial inferir e desenvolver novas ferramentas, pois o Big Data tem 
-assumido, nos mais recentes anos, proporções gigantescas como descrito na tabela 1
+Este artigo ``Survey'' tem como objetivo analisar a problemática do Big Data e seus paradigmas apresentados atualmente, os 5 V's, extrair informações dele para propor solução à logística de cargas aplicada `a realidade das rodovias brasileiras, objetivando assim uma alternativa ao traçado de rotas determinísticas, inspirado em buscas no \textit{Big Data}. 
 
-
-%Tabela 1
-
-
-\begin{table}[htbp]
-\scriptsize
-\centering
-\caption{Volume de dados no mundo}
-\begin{tabular}{|p{6mm}|p{5mm}|p{16mm}|p{8mm}|}
-\hline
-Ano & Qtd & Unidade & Múltiplo \\
-\hline
-2000 & 800 & terabytes - TB & $10^{12}$ \\ \hline
-
-2006 & 160 & petabytes – PB & $10^{15}$ \\ \hline
-
-2009 & 500 & exabytes – EB & $10^{18}$ \\ \hline
-
-2012 & 2,7 & zettabytes - ZB & $10^{21}$ \\ \hline
-
-2020 & 35 & yottabytes - YB & $10^{24}$ \\ \hline
-
-\end{tabular}
-\end{table}
 
 
 \section{Plano de execução do Survey}
 
-Para executarmos este Survey, foram primeiramente definidas as seguintes etapas:
+Para executarmos este \textit{Survey}, foram primeiramente definidas as seguintes etapas:
 
 \begin{enumerate}
  \item[A.] Coleta dos dados;
@@ -219,20 +174,21 @@ Para executarmos este Survey, foram primeiramente definidas as seguintes etapas:
 
 \begin{enumerate}
  \item[A.] Coleta dos dados\\
- Para coletar os dados foram escolhidas seis (6) palavras chaves com relevância ao tema dentro do meio ambiente da pesquisa. Foram:
+ Para coletar os dados foram escolhidas sete (7) palavras chaves com relevância ao tema dentro do meio ambiente da pesquisa, destacamos:
   \begin{itemize}
-    \item “Data Mining and Swarm Inteligence”
+    \item “Data Mining and Swarm Intelligence”
     \item “Data Mining Big Data”
     \item “Data Mining Swarm Robotics”
     \item “Deep Learning”
-    \item “Hadoop Map Reduce in Big Data”
+	\item “Hadoop Map Reduce in Big Data”    
+    \item "Machine Learning"
     \item “Map Reduce Big Data”
   \end{itemize}
 
 
  De posse das palavras-chave foram criadas planilhas, onde cada folha dessa planilha é representada por uma palavra chave. 
  Incluiu-se no mínimo 30 artigos para cada planilha. 
- Pretendeu-se, com essa arquitetura, construir rapidamente gráficos das mais diferentes matizes.
+ Pretendeu-se, com essa arquitetura, construir rapidamente gráficos das mais diferentes matizes, tais como:
   \begin{itemize}
     \item Base pesquisada;
     \item Data da publicação do artigo;
@@ -301,9 +257,9 @@ Para executarmos este Survey, foram primeiramente definidas as seguintes etapas:
 
 \section{A Internet}
 
-Uma Internetwork ou simplesmente internet é a conexão entre mais de uma rede e hoje em dia a maioria das redes se encontram conectadas.  A Internet é um sistema de internetwork organizado e estruturado, a mais notável das internets, uma colaboração de mais de centenas de milhares de redes. Já World Wide Web (Grande Rede Mundial) é apenas um dos muitos serviços que funcionam dentro da Internet. 
+Uma \textit{Internetwork} ou simplesmente internet é a conexão entre mais de uma rede e hoje em dia a maioria das redes se encontram conectadas.  A Internet é um sistema de \textit{internetwork} organizado e estruturado, a mais notável das internets, uma colaboração de mais de centenas de milhares de redes. Já ``World Wide Web'' (WWW) é apenas um dos muitos serviços que funcionam dentro da Internet. 
 
-O acesso à Internet está condicionado a Provedores de Acesso (ISP), que se classificam em internacionais, que conectam países; nacionais (backbones criadas e mantidas por empresas especializads) ; regionais ligadas a outros ISPs, normalmente têm taxas de transmissão menores; e locais que se conectam a ISP regionais ou nacionais e oferecem serviços de conecção a usuários finais.
+O acesso à Internet está condicionado a Provedores de Acesso (ISP), que se classificam em internacionais, que conectam países; nacionais (\textit{backbones} criadas e mantidas por empresas especializados) ; regionais ligadas a outros ISPs, normalmente têm taxas de transmissão menores; e locais que se conectam a ISP regionais ou nacionais e oferecem serviços de conexão a usuários finais.
 
 
 \begin{figure}[!h]
@@ -316,7 +272,7 @@ O acesso à Internet está condicionado a Provedores de Acesso (ISP), que se cla
 
 
 
-\section{Redes de Computadores}
+\subsection{Redes de dispositivos conectados}
 % no \IEEEPARstart
 Uma rede é um conjunto de dispositivos (nós) conectados por links (caminho de transferência) de comunicação.  Um nó pode ser um computador, uma impressora ou outro dispositivo de envio e/ou recepção de dados, que estejam conectados a outro nó da rede \cite{Forouzan}.
 
@@ -324,25 +280,140 @@ Por mais simples e menor que seja, três critérios são considerados os mais im
 
 
 
-\subsection{Categorias de Rede}
-Quanto à Categoria, as redes são classificadas em:
-\begin{enumerate}
-	\item[a.]\textbf{Redes pessoais (PAN) }	– Conectam dispositivos em uma pequena área, aproximadamente 1$m^2$;  
-	\item[b.]\textbf{Redes locais (LAN) } – são privadas, podem englobar desde um escritório a um campus universitário.  Alguns colocam a PAN nesta categoria de rede. As LANs são projetadas para compartilhamento de recursos computacionais;
-	\item[c.]\textbf{Redes geograficamente separadas (WAN)} - possibilitam transmissão de dados, imagens, áudio e vídeo por longas distâncias, áreas que podem compreender um país, um continente ou mesmo o mundo todo.  
-	\item[d.]\textbf{ Redes metropolitanas (MAN)} – rede de tamanho intermediário, entre LAN e WAN, abrangendo um distrito ou cidade. Normalmente usada para distribuir serviço de TV e Internet.
-\end{enumerate}
+\section{Big data}
+
+"Em 2010 empresas e usuários armazenaram mais de 13 exabytes de novos dados" \cite{bigdataQualquerUm}.
+
+Atrelada a essa produção massiva de dados, uma nova onda está sendo vislumbrada, é chamada de ''A terceira onda da Internet''
+, onde coisas se conectam com coisas; produtos nas gôndolas do supermercado com um novo tipo de etiqueta se conectam a uma 
+leitora de radio frequência à alguns metros de distância, contabilizando o total do estoque em segundos; o consumidor leva 
+seus produtos escolhidos ao caixa desse supermercado, pagando a conta sem precisar retirar qualquer produto do carrinho. 
+Ao introduzir esses produtos na geladeira, será possível saber quando expira a data de validade de determinados produtos, sem 
+precisar abri-la, e quando acabarem esses produtos, a própria geladeira informará ao supermercado a falta deles, reservando 
+o próximo rol de compras. Assim será essa onda de coisas conectadas, chamada de Internet das Coisas ou \textit{Internet of Things} (IoT),
+que fará com que os dados no \textit{Big Data} sofram explosão combinatória de informações multiplicando exponencialmente as dimensões deste.
 
 
-\begin{figure}[!htb]
+O paradigma dos 5 V’s é descrito como: Volume de dados; Velocidade para acessar esses dados; 
+Variedade de informações; Veracidade nos dados encontrados e Valor atribuído aos dados. 
+Dentre as mais diversas ferramentas existentes destacamos algumas já consagradas como Map Reduce, da ``framework'' Hadoop,
+e sua congênere desenvolvida pelo Google. Essas são as mais conhecidas dos ``aventureiros'' que estão desbravando o Big Data. Não será uma tarefa trivial inferir e desenvolver novas ferramentas, pois o Big Data tem 
+assumido, nos mais recentes anos proporções gigantescas como descrito na tabela 1
+
+
+%Tabela 1
+
+
+\begin{table}[!ht]
+\scriptsize
 \centering
-%\centering % para centralizarmos a figura
-\caption{Topologia de rede }
-\includegraphics[width=63mm]{Figuras/Topologies.eps}
+\caption{Volume de dados no mundo}
+\begin{tabular}{|p{6mm}|p{5mm}|p{16mm}|p{8mm}|}
+\hline
+Ano & Qtd & Unidade & Múltiplo \\
+\hline
+2000 & 800 & terabytes – TB & $10^{12}$ \\ \hline
 
-%\label{figura 3}
+2006 & 160 & petabytes – PB & $10^{15}$ \\ \hline
+
+2009 & 500 & exabytes – EB & $10^{18}$ \\ \hline
+
+2012 & 2,7 & zettabytes – ZB & $10^{21}$ \\ \hline
+
+2020 & 35 & yottabytes – YB & $10^{24}$ \\ \hline
+
+\end{tabular}
+\end{table}
+
+As redes sociais são um arcabouço de informações sobre todo tipo de assunto vivenciado pelas pessoas, inclusive situações que dizem respeito ao nosso ambiente de pesquisa.
+O cenário abaixo, encontrado numa rede social, exemplifica a sequência de informações retiradas do Twitter.
+O Twitter é uma rede social, onde os usuários escrevem num pequeno espaço com cerca de 140 caracteres, os mais diversos assuntos. A ideia inicial do Twitter era que se comportasse como um ``SMS da Internet'' \cite{Twitter2015}. As informações são enviadas aos usuários, conhecidas como twittes, em tempo real e, também enviadas aos usuários seguidores que tenham assinado para recebê-las. A seguir pode-se verificar uma sequência de twittes da Polícia Rodoviária Federal de Santa Catarina:
+
+\begin{figure}[!ht]
+\caption{Twitter	}
+	\subfloat[Twitte - 1 \label{subfig-1:dummy}]{%
+		\includegraphics[width=60mm, height=70mm]{Figuras/twittePRF.png}
+	}
+	\quad \quad \quad \quad
+	\subfloat[Twitte - 2\label{subfig-2:dummy}]{%
+		\includegraphics[width=60mm, height=70mm]{Figuras/twittePRF2.png}
+	}
+	\label{fig:twitter}
 \end{figure}
 
+A Polícia Rodoviária Federal de Santa Catarina, disponibilizou às 13hs através do canal @PRF191SC, informações relevantes sobre o trânsito naquela localidade, 
+num universo temporal variado, por exemplo: entre Itajaí e Balneário Camboriú o transito está intenso, isso sugere que a frota de caminhões que acompanhamos até este local deva ter uma
+rota alternativa, caso persista esta situação por muito tempo. No primeiro twitte da segunda coluna em Via Expressa (BR 282) trânsito lento com 
+velocidade de 20km/h praticamente congestionado, novamente sugere que devamos ``pensar'' numa rota alternativa, caso esse congestionamento persista por muito tempo.
+
+Outra rede social conhecida pelos condutores de veículos é o Waze. O Waze é um aplicativo de navegação para o trânsito, funciona em aparelhos celulares e tablets. Os utilizadores desse aplicativo são conhecidos como wazers, os wazers compartilham informações sobre o trânsito, em tempo real. Contudo as informações somente estão disponíveis no momento em que são postadas pelos utilizadores por um período de tempo pequeno, caso não hajam utilizadores trafegando pelas vias ou esses utilizadores não tenham disponibilidade em postar informações, não há o que se compartilhadar.
+Outra problema levantado com o waze é que; caso não haja conexão à Internet não há como acessar os dados dos wazers, para navegação.
+
+Além dos dados que chegam ao \textit{Big Data} através das redes sociais, o trânsito das grandes cidades têm disponíveis câmeras de monitoramento do trânsito nos semáforos, alguns com cobertura
+por canais de televisão, câmaras de segurança próximos às rodovias também coletam informações, tudo em tempo real. Os dados desses dispositívos geralente são gravados sendo conhecidos como \textit{stream} de dados. 
+Esses \textit{streams} podem estar disponibilizados na Internet em sítios eletrônicos especialmente construídos para isso, como o
+< http://vejoaovivo.com.br/ > e outros.
+
+Os dados disponibilizados pelos diversos meios de comunicação não estão em formato que possam ser utilizados imediatamente, precisam antes serem processados. Esses dados não processados são conhecidos como ``dados frios''.
+O processo de tratar as informações, retirando-lhes o ``lixo''; transformando dados ``frios'' em dados ``quentes'', é um processo que tem um custo temporal elevado, devido ao volume dos dados.
+
+Para trabalhar com os dados do Big Data foi criado um tipo arquitetura para computadores trabalharem em conjunto formando um \textit{cluster} essa arquitetura é conhecida como \textit{filesystem}\footnote{\textit{Filesystem}. ou sistema de arquivos, referem-se à forma como os dados são armazenados, organizados e acessados, pelo sistema operacional, em cada partição no disco (ou no disco inteiro)}.
+
+O goolgle criou o \cite{Filesystem} HadDoop FileSystem (HDFS).
+
+\subsection{Hadoop - Map Reduce - Big Data}\label{arte:palavraChave:HadoopMapReduce}
+
+Portanto o \textit{Big Data}, devido à sua natureza, é definido como um paradigma entre as grandezas: \textbf{Velocidade}, \textbf{Variedade} e \textbf{Volume}.
+O roteiro seguido pela informação desde o local onde é produzida até que possa ser utilizada é  exemplificado na imagem a seguir:
+
+\begin{figure}[ht]
+\centering
+\caption{Big Data e Arquitetura Haddop}
+\includegraphics[width=100mm, height=80mm]{Figuras/BigDataComponents.jpg}
+\end{figure}
+
+A camada mais baixa da imagem, onde se lê \textit{Processing \& Original Data} é a origem do \textit{Big Data}, onde estão os dados ``frios''. Entre as camadas \textit{Location-aware File Systems} e \textit{Management \& Security} é o roteiro seguido pela informação para ser trasformada em dados ``quentes''. A tecnologia utilizada, neste mestrado, para tratar os dados será o Hadoop, devido ao baixo custo de implementação e por ser uma tecnologia aberta, de livre utilização, conhecida como \textit{Open Source}. O Haddop é uma arquitetura de milhares de computadores interligados e espalhados e pela Intenet. Esses computadores são especializados em extrair dados do \textit{Big Data} e transformá-los em dados relevantes (quentes). <<\textbf{citar}>>
+
+O Haddop funciona com um agrupamento em paralelo desses computadores, conhecido como \textit{cluster}. Esse \textit{cluster} tem a característica de grande escalabilidade; em torno de 3 000 computadores, dependendo da construção, e tolerância a falhas; quando um computador do \textit{cluster} fica inoperante  ``cai'', os dados são salvos em outro computador. A estrutura de diretórios do Hadoop é conhecida como \textit{Hadoop File System} (HDFS). O HDFS foi especialmente construído para lidar com as características descritas anteriormente.
+
+
+
+\subsection{Map Reduce - Big Data}\label{arte:palavraChave:MapReduceBigData}
+
+
+O Map-Reduce é uma técnica conhecida desde a linguagem Lisp, que permite mapear o \textit{cluster} e reduzir conforme um par de informações <chave:valor>. A imagem a seguir exemplifica a técnica Map-Reduce:
+
+\begin{figure}[ht]
+\centering
+\caption{Técnica Map-Reduce}
+\includegraphics[width=100mm, height=80mm]{Figuras/MapReduce.jpg}
+\end{figure}
+
+Este Map-Reduce, modelo de computação paralela para ser utilizado na Internet foi proposto pelo Google
+\cite{Dean2008}.
+
+\subsection{Data Mining - Swarm Inteligence}\label{arte:palavraChave:Swarm}
+
+\subsection{Data Mining - Big Data}\label{arte:palavraChave:DataMiningBigData}
+
+\subsection{Data Mining - Swarm Robotics}\label{arte:palavraChave:Robotics}
+
+O rápido crescimento da Internet, tem trazido, a reboque, o contínuo crescimento da insegurança nos computadores e sistemas \cite{Barford2007}.
+Ataques utilizando à computadores através de robôs.
+
+\subsection{Deep Learning}\label{arte:palavraChave:Deep}
+
+
+
+\subsection{Machine Learning}\label{arte:palavraChave:Machine}
+
+O desafio dos 3 V's (Velocidade, Variedade e Volume) pode ser um fator determinístico na escolha da ferramenta mais adequada para se analisar dados do \textit{Big Data} e extrair informação. As árvores de decisão são algorimos rápidos, contudo dados impuros podem comprometer o desepenho desse algoritmo. A fase de extração dos dados do \textit{Big Data} são fortemente influenciáveis pelas variáveis escolhidas, \cite{DecisionTree} isso pode representar o desafio maior para implementar esta técnica, na figura a seguir exemplificamos essa tarefa:
+
+desenhar a figura
+
+% \begin{tikzpicture}
+%  \draw (0,0) -- (2,1); %reta
+% \end{tikzpicture}
 
 
 \section{Enxame de partículas}\label{arte:enxames}
@@ -353,7 +424,7 @@ comportamental e possibilitou o melhor entendimento de como cooperam indivíduos
 quais os mecanismos usados para controlar o enxame e condicionar o indivíduo, tais como a estigmergia. 
 Por enxame, pode entender-se manada, alcateia, bando, colônia, entre outras designações conforme o animal 
 ou inseto e, a partir daqui, qualquer referência a um grupo de agentes passa a ser feita por enxame, e.g., 
-um enxame de pássaros. Os 5 princípios da inteligência de enxame segundo \cite{chambers2014computer} \cite{chambers2014computer}, são:
+um enxame de pássaros. Os 5 princípios da inteligência de enxame segundo  Chambers \cite{chambers2014computer}, são:
 \begin{itemize}
 	\item{Proximidade: os agentes têm que ser capaz de interagir}
 	\item{Qualidade: os agentes devem ser capazes de avaliar seus comportamentos}
@@ -380,15 +451,16 @@ A equação utilizada para encontrar uma partícula no espaço de busca foi empr
 x_i(t+1) = x_i(t) + v_i(t+1)
 \end{equation}
 
-Onde $x_1(t)$ é a posição da partícula num determinado momento ''t''. O $x_i(t+1) $ é a posição atual da partícula.
+Onde $x_1(t)$ é a posição da partícula num determinado momento ``t''. O $x_i(t+1) $ é a posição atual da partícula.
 
 A velocidade da partícula é de acordo com a equação:
 
 \begin{equation}
-v_i(t+1) = v_i(t) + op_Nbest + op_Lbest 
-op_Nbest = c_1r_1j(t)[Nbest - x_i(t)] 
-op_Lbest = c_2r_2j[Lbest - x_i(t)]
+v_i(t+1) = v_i(t) + Nbest + Lbest
 \end{equation}
+
+\flushleft $Nbest = c_1r_1j(t)[Nbest - x_i(t)]$
+\flushleft $Lbest = c_2r_2j[Lbest - x_i(t)]$\\
 
 Onde $v_i(t)$ é a velocidade num momento ''t'' qualquer e $v_i(t+1)$ é a velocidade atual da partícula.
 Os coeficientes $c_1r_1j(t)$ e $c_2r_2j$ são números que variam entre 0 e 1 para mudar a posição da partícula.
@@ -505,40 +577,106 @@ The authors would like to thank...
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
 
+%1
+\bibitem{Forouzan}
+FOROUZAN, Behrouz A. Comunicação de Dados e Redes de Computadores. São Paulo: McGraw-Hill, 2008
 
+%2  
+\bibitem{Swarm_Medeiros}
+Talles Henrique De Medeiros, Luís Fabrício Wanderley Góes, M. B.-B. C. E. I. M. (n.d.). 
+\emph{Computação Bioinspirada aplicada à Robótica}
+
+%3
+\bibitem{Specialski} 
+E. ~SPECIALSKI (1999).
+\emph{Gerência de redes de computadores e telecomunicações}
+
+%4
 \bibitem{bigdataQualquerUm}
   H. V. Jagadish, J. Gehrke, A. Labrinidis, Y. Papakontantinou, J. M. Patel, R. Ramakrishnan and C. Shahabi
   \emph{Exploring the inherent technical challenges in realizing the potential of Big Data},
   journal:Comunication of the ACM, volume=57, numbe=r7, pages=86--96, month=July, year=2014
 
-  
-\bibitem{Swarm_Medeiros}
-Talles Henrique De Medeiros, Luís Fabrício Wanderley Góes, M. B.-B. C. E. I. M. (n.d.). 
-\emph{Computação Bioinspirada aplicada à Robótica}
-
-\bibitem{Forouzan}
-FOROUZAN, Behrouz A. Comunicação de Dados e Redes de Computadores. São Paulo: McGraw-Hill, 2008
-
-\bibitem{Specialski} 
-E. ~SPECIALSKI (1999).
-\emph{Gerência de redes de computadores e telecomunicações}
-
+%5
 \bibitem{SRobotics}
 H. ~Ahmed, and J. ~Glasgow,
 \emph{Swarm intelligence: concepts, models and applications},
 \relax School of Computing, Queen's University, Citeseer, 2012.
 
+%6
+\bibitem{singer}
+SINGER, Talyta. TUDO CONECTADO: CONCEITOS E REPRESENTAÇÕES DA INTERNET DAS COISAS. 2012.
+Acessado em: 23 abril. 2015.
+\href{http://www.simsocial2012.ufba.br/modulos/submissao/Upload/44965.pdf} {Singer}
+
+%7
+\bibitem{Twitter2015}
+Dorsey, J. Williams, B. Stone, E. and Glass, N.
+Acessado em Julho de 2015
+\href {https://pt.wikipedia.org/wiki/Twitter}
+{Twitter}
+
+%8
+\bibitem{Filesystem}
+Filho, João Heriberto Mota,
+booktitle = {Descobrindo o Linux: entenda o sistema operacional GNU/Linux},
+isbn = {978-85-7522-278-2},
+pages = {153--162},
+year = {2012}
+
+%9
+\bibitem{Dean2008}
+Dean, Jeffrey and Ghemawat, Sanjay,
+institution = {Google, Inc.},
+issn = {00010782},
+journal = {Communications of the ACM},
+number = {1},
+pages = {1--13},
+pmid = {11687618},
+publisher = {ACM},
+series = {SIGMOD '07},
+title = {{MapReduce : Simplified Data Processing on Large Clusters}},
+volume = {51},
+year = {2008}
+\href{http://portal.acm.org/citation.cfm?id=1327492}{MapReduce}
+
+
+%10
+\bibitem{Barford2007}
+Barford, Paul and Yegneswaran, Vinod,
+title = {{An inside look at Botnets}},
+doi = {10.1007/978-0-387-44599-1},
+isbn = {978-0-387-32720-4},
+issn = {03601315},
+journal = {Malware Detection},
+pages = {171--191},
+volume = {27},
+year = {2007}
+\href{http://www.springerlink.com/index/10.1007/978-0-387-44599-1}{Botnet}
+
+
+%11
+\bibitem{DecisionTree}
+A. Srivastava, V. Katiyar and N. Singh -- Review of Decision Tree Algorithm: Big Data Analytics,
+International Journal of Informative \& Futuristic Research,
+number = {10},
+pages = {3644--3654},
+volume = {2},
+year = {2015}
+
+%12
 \bibitem{chambers2014computer}
 W. D. Chambers (2014).
 \emph{Computer simulation of dental professionals as a moral community. Medicine, Health Care and Philosophy}
 \relax  17(3), 467–476.
 
+%13
 \bibitem{Kennedy1995}
 J. Kennedy and R. Eberhart (1995). 
 \emph{Particle swarm optimization. In Neural Networks, 1995. Proceedings.}
 IEEE International Conference on (Vol. 4, pp. 1942–1948 vol.4). http://doi.org/10.1109/ICNN.1995.488968
 
-
+%14
 \bibitem{Blum2005}
 C. Blum
 \emph{Ant colony optimization}
@@ -552,6 +690,7 @@ pages: {353--373},
 volume: {2},
 year {2005}
 
+%15
 \bibitem{Dorigo2005}
 M. Dorigo and C. Blum,
 \emph{Ant colony optimization theory: A survey},
@@ -565,7 +704,7 @@ pages: {243--278},
 volume: {344},
 year: {2005}
 
-
+%16
 \bibitem{Filho2008}
 Filho, Carmelo J A Bastos and Neto, Fernando B De Lima and Lins, Anthony J C C and Nascimento, Ant\^{o}nio I S and Lima, Mar\'{\i}lia P.
 booktitle: {Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics},
@@ -577,18 +716,14 @@ keywords: {Fish school,Search algorithms,Social behaviour,Swarm intelligence},
 pages: {2646--2651},
 year: {2008}
 
-
+%17
 \bibitem{madeira}
 Madeira, Lamont. Hoje a internet, amanhã os desafios da internet das coisas. 2011.
 
+%18
 \bibitem{mayumi}
 MAYUMI, Danielle. Computação nas nuvens – O futuro da internet. 2011.
 
-
-\bibitem{singer}
-SINGER, Talyta. TUDO CONECTADO: CONCEITOS E REPRESENTAÇÕES DA INTERNET DAS COISAS. 2012.
-Acessado em: 23 abril. 2015.
-\href{http://www.simsocial2012.ufba.br/modulos/submissao/Upload/44965.pdf} {Singer}
 
 
 \end{thebibliography}
