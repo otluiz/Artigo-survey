@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.20)  30 OCT 2015 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.20)  31 OCT 2015 00:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,246 +664,291 @@ LaTeX Info: Redefining \nameref on input line 64.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 64.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 96.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 91.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.05249> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14.05249> not available
 
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 96.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 91.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 127.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2351) in paragraph at lines 138--142
-\OT1/ptm/m/n/10.03749 informa[][]oes com efici[]encia uma nova abor-da-gem al-
- []
-
+(babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(babel)             in language  on input line 154.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 159.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 159.
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 158.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 17
-9.
+1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.03749> on input line 179.
+(Font)              <10.03749> on input line 171.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.0262> on input line 179.
+(Font)              <7.0262> on input line 171.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.01874> on input line 179.
+(Font)              <5.01874> on input line 171.
 
-<Figuras/PlanilhaSrvey.png, id=99, 712.6625pt x 421.575pt>
+<Figuras/PlanilhaSrvey.png, id=103, 712.6625pt x 421.575pt>
 File: Figuras/PlanilhaSrvey.png Graphic file (type png)
 
 <use Figuras/PlanilhaSrvey.png>
-Package pdftex.def Info: Figuras/PlanilhaSrvey.png used on input line 212.
+Package pdftex.def Info: Figuras/PlanilhaSrvey.png used on input line 204.
 (pdftex.def)             Requested size: 202.3529pt x 119.69983pt.
 
-Underfull \hbox (badness 3568) in paragraph at lines 223--226
+Underfull \hbox (badness 3568) in paragraph at lines 215--218
 []\OT1/ptm/m/n/10.03749 Outro crit[]erio de sele[][]ao foi o quan-ti-ta-tivo.
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 223--226
+Underfull \hbox (badness 3354) in paragraph at lines 215--218
 \OT1/ptm/m/n/10.03749 Para isso foi es-ta-be-le-cido o m[]^^Pnimo de 30
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 223--226
+Underfull \hbox (badness 2671) in paragraph at lines 215--218
 \OT1/ptm/m/n/10.03749 pro-cu-ra-mos apro-xi-mar os da-dos co-le-ta-dos da
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
 \OT1/ptm/m/n/10.03749 distribui[][]ao nor-mal padr[]ao que por raz[]oes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--226
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--233
+Underfull \hbox (badness 10000) in paragraph at lines 219--225
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 239.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 239.
-[2 <./Figuras/PlanilhaSrvey.png>]
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 244
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 236
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.02625> on input line 244.
+(Font)              <7.02625> on input line 236.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.91833> on input line 244.
+(Font)              <4.91833> on input line 236.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <3.51312> on input line 244.
+(Font)              <3.51312> on input line 236.
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\OT1/ptm/m/n/7.02625 A-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 []\OT1/ptm/m/n/7.02625 B-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 []\OT1/ptm/m/n/7.02625 C-
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 250.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 253.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 253.
+[2 <./Figuras/PlanilhaSrvey.png>]
 Package epstopdf Info: Source file: <Figuras/internet_map.eps>
-(epstopdf)                    date: 2015-10-28 23:42:12
+(epstopdf)                    date: 2015-10-30 09:30:18
 (epstopdf)                    size: 552684 bytes
 (epstopdf)             Output file: <Figuras/internet_map-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2015-10-29 23:53:48
+(epstopdf)                    date: 2015-10-30 09:30:18
 (epstopdf)                    size: 103335 bytes
 (epstopdf)             Command: <repstopdf --outfile=Figuras/internet_map-eps-c
 onverted-to.pdf Figuras/internet_map.eps>
-(epstopdf)             \includegraphics on input line 269.
+(epstopdf)             \includegraphics on input line 261.
 Package epstopdf Info: Output file is already uptodate.
-<Figuras/internet_map-eps-converted-to.pdf, id=106, 301.125pt x 301.125pt>
+
+<Figuras/internet_map-eps-converted-to.pdf, id=111, 301.125pt x 301.125pt>
 File: Figuras/internet_map-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Figuras/internet_map-eps-converted-to.pdf>
 Package pdftex.def Info: Figuras/internet_map-eps-converted-to.pdf used on inpu
-t line 269.
+t line 261.
 (pdftex.def)             Requested size: 142.26378pt x 142.26852pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 267.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 275.
 
-Overfull \hbox (1.8363pt too wide) in paragraph at lines 313--314
+Overfull \hbox (1.8363pt too wide) in paragraph at lines 303--304
 []\OT1/ptm/m/n/7.02625 M[]ultiplo| 
  []
 
-<Figuras/twittePRF.png, id=112, 581.17125pt x 485.815pt>
+<Figuras/twittePRF.png, id=117, 581.17125pt x 485.815pt>
 File: Figuras/twittePRF.png Graphic file (type png)
 
 <use Figuras/twittePRF.png>
 Package pdftex.def Info: Figuras/twittePRF.png used on input line 336.
-(pdftex.def)             Requested size: 170.71686pt x 199.1632pt.
+(pdftex.def)             Requested size: 227.62248pt x 199.1632pt.
 
-<Figuras/twittePRF2.png, id=113, 578.16pt x 497.86pt>
+<Figuras/twittePRF2.png, id=118, 578.16pt x 497.86pt>
 File: Figuras/twittePRF2.png Graphic file (type png)
 
 <use Figuras/twittePRF2.png>
 Package pdftex.def Info: Figuras/twittePRF2.png used on input line 340.
-(pdftex.def)             Requested size: 170.71451pt x 199.17085pt.
+(pdftex.def)             Requested size: 227.61641pt x 199.17085pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 336--342
 [][]
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 349.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 349.
 [3 <./Figuras/internet_map-eps-converted-to.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 364.
+(babel)             in language  on input line 367.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 376.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 376.
+ [4 <./Figuras/twittePRF.png (PNG copy)> <./Figuras/twittePRF2.png (PNG copy)>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 378.
 
-<Figuras/BigDataComponents.jpg, id=132, 707.7642pt x 520.8258pt>
+<Figuras/BigDataComponents.jpg, id=147, 707.7642pt x 520.8258pt>
 File: Figuras/BigDataComponents.jpg Graphic file (type jpg)
 
 <use Figuras/BigDataComponents.jpg>
-Package pdftex.def Info: Figuras/BigDataComponents.jpg used on input line 372.
-(pdftex.def)             Requested size: 284.5262pt x 227.62231pt.
+Package pdftex.def Info: Figuras/BigDataComponents.jpg used on input line 386.
+(pdftex.def)             Requested size: 227.62312pt x 227.62231pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 395.
 
-Overfull \hbox (40.61494pt too wide) in paragraph at lines 372--373
- [][] 
+! Undefined control sequence.
+l.398 ...duzir conforme um par de informações \<
+                                                  chave:valor\>.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.398 ...e um par de informações \<chave:valor\>
+                                                  .
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.400 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+[]\OT1/ptm/m/n/10.03749 O Map-Reduce []e uma t[]ecnica co-nhe-cida
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 378.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 378.
-[4 <./Figuras/twittePRF.png (PNG copy)> <./Figuras/twittePRF2.png (PNG copy)>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 381.
 
-<Figuras/MapReduce.jpg, id=142, 722.7pt x 542.025pt>
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+\OT1/ptm/m/n/10.03749 desde a lin-gua-gem Lisp, que per-mite ma-pear o
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 398--400
+\OT1/ptm/m/it/10.03749 clus-ter \OT1/ptm/m/n/10.03749 e re-du-zir con-forme um 
+par de informa[][]oes
+ []
+
+
+Overfull \hbox (7.19746pt too wide) in paragraph at lines 398--400
+\OT1/ptm/m/n/10.03749 chave:valor$ \OML/cmm/m/it/10 :OHadoopimplementaoparadigm
+aMapReduce$ 
+ []
+
+<Figuras/MapReduce.jpg, id=149, 722.7pt x 542.025pt>
 File: Figuras/MapReduce.jpg Graphic file (type jpg)
 
 <use Figuras/MapReduce.jpg>
-Package pdftex.def Info: Figuras/MapReduce.jpg used on input line 389.
+Package pdftex.def Info: Figuras/MapReduce.jpg used on input line 406.
 (pdftex.def)             Requested size: 284.53154pt x 227.62413pt.
 
-Overfull \hbox (40.62029pt too wide) in paragraph at lines 389--390
+Overfull \hbox (40.62029pt too wide) in paragraph at lines 406--407
  [][] 
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 395.
+(babel)             in language  on input line 417.
+<Figuras/FayyadSemFundo.png, id=152, 821.0675pt x 484.81125pt>
+File: Figuras/FayyadSemFundo.png Graphic file (type png)
+
+<use Figuras/FayyadSemFundo.png>
+Package pdftex.def Info: Figuras/FayyadSemFundo.png used on input line 428.
+(pdftex.def)             Requested size: 256.06929pt x 213.39897pt.
+
+Overfull \hbox (12.15804pt too wide) in paragraph at lines 428--429
+[]  
+ []
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 397.
+(babel)             in language  on input line 434.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 399.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 404.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 408.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 419.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 432.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 432.
+(babel)             in language  on input line 434.
 [5 <./Figuras/BigDataComponents.jpg> <./Figuras/MapReduce.jpg>]
-Underfull \hbox (badness 5403) in paragraph at lines 433--434
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 436.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 441.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 455.
+
+Underfull \hbox (badness 5403) in paragraph at lines 469--470
 []\OT1/ptm/m/n/10.03749 Adaptabilidade: ca-pa-ci-dade de se ade-quar as
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 437.
-
-Underfull \hbox (badness 7273) in paragraph at lines 439--445
-[]\OT1/ptm/m/n/10.03749 Kennedy e Eberhart (1995), cri-a-ram a po-pu-lar
- []
-
+(babel)             in language  on input line 506.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 470.
+(babel)             in language  on input line 506.
+[6 <./Figuras/FayyadSemFundo.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 530.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 512.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 521.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 521.
-[6]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 522.
+(babel)             in language  on input line 534.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 539.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 578.
+(babel)             in language  on input line 543.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 729.
+(babel)             in language  on input line 557.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 729.
+(babel)             in language  on input line 579.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 595.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 601.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 601.
  [7]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 634.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -918,31 +963,29 @@ Before submitting the final camera ready copy, remember to:
 
 AED: lastpage setting LastPage
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 737.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 737.
-[8
-
-]
+(babel)             in language  on input line 830.
+[8]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 737.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 737.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 737.
+(babel)             in language  on input line 830.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 830.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 830.
  (./survey.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 737.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 737.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 830.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 830.
 Package rerunfilecheck Info: File `survey.out' has not changed.
-(rerunfilecheck)             Checksum: 815E4791C115940C1275FFC7EF10F642;1359.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 737.
+(rerunfilecheck)             Checksum: FEC4C99E3F52744081B701EA56AD2B1D;1368.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 830.
  ) 
 Here is how much of TeX's memory you used:
- 8450 strings out of 493089
- 132423 string characters out of 6134847
- 239987 words of memory out of 5000000
- 11763 multiletter control sequences out of 15000+600000
+ 8461 strings out of 493089
+ 132621 string characters out of 6134847
+ 237959 words of memory out of 5000000
+ 11768 multiletter control sequences out of 15000+600000
  43867 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 44i,13n,47p,956b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,13n,47p,1059b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -956,10 +999,10 @@ mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on survey.pdf (8 pages, 778831 bytes).
+Output written on survey.pdf (8 pages, 832626 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 199 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 

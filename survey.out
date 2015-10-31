@@ -1,21 +1,22 @@
 \BOOKMARK [1][-]{section.1}{Introdu\347\343o}{}% 1
 \BOOKMARK [1][-]{section.2}{Objetivos}{}% 2
 \BOOKMARK [1][-]{section.3}{Plano de execu\347\343o do Survey}{}% 3
-\BOOKMARK [1][-]{section.4}{A Internet}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Redes de dispositivos conectados}{section.4}% 5
-\BOOKMARK [1][-]{section.5}{Big data}{}% 6
-\BOOKMARK [2][-]{subsection.5.1}{Hadoop - Map Reduce - Big Data}{section.5}% 7
-\BOOKMARK [2][-]{subsection.5.2}{Map Reduce - Big Data}{section.5}% 8
-\BOOKMARK [2][-]{subsection.5.3}{Data Mining - Swarm Inteligence}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.4}{Data Mining - Big Data}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.5}{Data Mining - Swarm Robotics}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.6}{Deep Learning}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.7}{Machine Learning}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Enxame de part\355culas}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{Particle Swarm Optimization - \(PSO\)}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.2}{Ant Colony Optimization - \(ACO\) }{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.3}{Fish School Search - \(FSS\) }{section.6}% 17
-\BOOKMARK [1][-]{section.7}{Arquiteturas atuais}{}% 18
-\BOOKMARK [1][-]{section.8}{Resultados esperados}{}% 19
-\BOOKMARK [1][-]{section.9}{Conclus\343o}{}% 20
-\BOOKMARK [1][-]{section*.9}{Refer\352ncias}{}% 21
+\BOOKMARK [2][-]{subsection.3.1}{Detalhamento das etapas}{section.3}% 4
+\BOOKMARK [1][-]{section.4}{A Internet}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Redes de dispositivos conectados}{section.4}% 6
+\BOOKMARK [1][-]{section.5}{Big data}{}% 7
+\BOOKMARK [1][-]{section.6}{Hadoop \205 MapReduce}{}% 8
+\BOOKMARK [2][-]{subsection.6.1}{Hadoop - Map Reduce - Big Data}{section.6}% 9
+\BOOKMARK [2][-]{subsection.6.2}{Map Reduce - Big Data}{section.6}% 10
+\BOOKMARK [1][-]{section.7}{Data Mining}{}% 11
+\BOOKMARK [2][-]{subsection.7.1}{Data Mining - Big Data}{section.7}% 12
+\BOOKMARK [1][-]{section.8}{Meta-heur\355sticas}{}% 13
+\BOOKMARK [1][-]{section.9}{Enxame de part\355culas}{}% 14
+\BOOKMARK [2][-]{subsection.9.1}{Data Mining - Swarm Inteligence}{section.9}% 15
+\BOOKMARK [2][-]{subsection.9.2}{Data Mining - Swarm Robotics}{section.9}% 16
+\BOOKMARK [2][-]{subsection.9.3}{Deep Learning}{section.9}% 17
+\BOOKMARK [2][-]{subsection.9.4}{Machine Learning}{section.9}% 18
+\BOOKMARK [2][-]{subsection.9.5}{Fish School Search - \(FSS\) }{section.9}% 19
+\BOOKMARK [1][-]{section.10}{Resultados esperados}{}% 20
+\BOOKMARK [1][-]{section.11}{Conclus\343o}{}% 21
+\BOOKMARK [1][-]{section*.10}{Refer\352ncias}{}% 22
