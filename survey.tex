@@ -61,6 +61,9 @@
 \usepackage{setspace}
 \pagestyle{plain}
 
+% escrevendo algoritmos
+\usepackage[portuguese,ruled,linesnumbered]{algorithm2e}
+
 \begin{document}
 %
 
@@ -92,7 +95,7 @@ Email: fbln@ecomp.poli.br}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Este artigo pretende fazer uma explanação de um novo paradigma o da informação ilimitada, conhecido como ``Big Data'' e, propor uma solução para recuperação de informação para grandes espaços de buscas. Atrelado a este paradigma e, reforçando o conceito de que uma nova onda está à frente da Internet, onde coisas se conectam entre si, conhecida como Internet das coisas ou simplesmente IoT. A Internet das coisas é também conhecido como a ``terceira onda da Internet''; computadores conectados a eletrodomésticos; telefones celulares ligados à semáforos, recebem informações sobre o tempo, acidentes e congestionamento e, passar esta informação ao carro, que avisa o condutor que está à frente. Conectar esses novos ``atores'' ou coisas que interagem com os atores humanos é minerar dados na Internet das coisas, extrair informação relevante e aplicar na solução dos problemas do dia a dia. Assim pretendemos modelar uma solução à problemática do logística de cargas aplicada à realidade brasileira.
+Este artigo pretende fazer uma explanação de um novo paradigma, o da informação ilimitada, conhecido como ``Big Data'' e propor uma solução para recuperação de informação para grandes espaços de buscas. Atrelado a este paradigma e reforçando o conceito de que uma nova onda está à frente da Internet, onde coisas se conectam entre si, conhecida como Internet das Coisas ou \textit{Internet of Thigs} (IoT). A Internet das coisas é também conhecido como a ``terceira onda da Internet''; onde computadores conectados a eletrodomésticos; telefones celulares ligados à semáforos, recebem informações sobre o tempo, acidentes e congestionamento e passam essas informação ao carro, que avisa o condutor o que está à frente. Conectar esses novos ``atores'' ou coisas que interagem com os atores humanos é necessário minerar as informações da Internet das coisas, transformando-os em dados para extrair-lhes informação relevante a fim de se aplicar na solução dos problemas do dia a dia.
 \end{abstract}
 
 \vspace{0.1cm}
@@ -102,8 +105,7 @@ Este artigo pretende fazer uma explanação de um novo paradigma o da informaç�
 
 \vspace{0.1cm}
 
-\textit{Abstract -- This paper intends to make an explanation of a new paradigm, the paradigm of unlimited information known as "Big Data" and to propose a solution for information retrieval for large spaces searches. Coupled to this paradigm and, reinforcing the concept that a new wave lies ahead for the Internet, where things connect with things, we are not as well known Internet of Things   or simply IoT. The IoT is also known as the "third wave of the Internet," the acronym is confirmed because something like computers connected to home appliances, mobile phones connected to the traffic lights, getting weather information, accidents and congestion and to pass this information to the car, which warns the driver what's ahead. This is the reality that approaching and we intend to analyze in this article how the new players, things, interact with traditional actors humans.
-So we intend to model a solution to the problem of logistic of loads applied to the Brazilian reality.
+\textit{Abstract -- This paper intends to make an explanation of a new paradigm, the paradigm of unlimited information known as "Big Data" and to propose a solution for information retrieval for large spaces searches. Coupled to this paradigm and, reinforcing the concept that a new wave lies ahead for the Internet, where things connect with things, we are not as well known Internet of Things   or simply IoT. The IoT is also known as the "third wave of the Internet," the acronym is confirmed because something like computers connected to home appliances, mobile phones connected to the traffic lights, getting weather information, accidents and congestion and to pass this information to the car, which warns the driver what's ahead. This is the reality that approaching and we intend to analyze in this article how the new players, things, interact with traditional actors humans to solve problems of day by day.
 }
 
 \textit{Keywords: Big Data, Map Reduce, Hadoop, Swarm Robotics, Swarm Intelligence, Deep Learning, Machine Learning, Particle Swarm Optimization, Ant Colony Optimization, Fish School Search, Logistic, Routing
@@ -147,13 +149,14 @@ solução procurada, somente o caminho curto onde é mais provável de se encont
 
 \section{Objetivos}
 
-Este artigo ``Survey'' tem como objetivo analisar a problemática do Big Data e seus paradigmas apresentados atualmente, extrair informações dele para propor solução à logística de cargas aplicada à realidade brasileira, objetivando assim uma alternativa ao traçado de rotas determinísticas, inspirado em buscas no \textit{Big Data}.
+Este artigo ``Survey'' tem como objetivo a priori mapear as mais diversas tecnologias empregadas para analisar à problemática do ``Big Data'' e seus paradigmas apresentados atualmente, extrair informações e conhecimentos, analisando as técnicas de Inteligência Artificial mais empregadas nesse campo do conhecimento científico.
+Como objetivo a posteriori propor uma solução à logística de cargas aplicada à realidade brasileira, objetivando assim uma alternativa ao traçado de rotas determinísticas, inspirado em buscas no ``Big Data''.
 
-
+Para executarmos este \textit{Survey}, foram feitas coletas de dados entre os meses de 
 
 \section{Plano de execução do Survey}
 
-Para executarmos este \textit{Survey}, foram primeiramente definidas as seguintes etapas:
+Primeiramente definidas as seguintes etapas:
 
 \begin{enumerate}
  \item[A.] Coleta dos dados;
@@ -202,7 +205,6 @@ Para executarmos este \textit{Survey}, foram primeiramente definidas as seguinte
   \caption{Planilha}
   \flushright
   \includegraphics[width=0.4\textwidth]{Figuras/PlanilhaSrvey.png}
-%  \includegraphics[scale=0.35]{Figuras/PlanilhaSrvey.png}
 %  \label{Fig 1}
   \end{figure}
   
@@ -219,7 +221,7 @@ Para executarmos este \textit{Survey}, foram primeiramente definidas as seguinte
   \item[C.] Critérios de Inclusão/Exclusão \\
   O critério de inclusão e exclusão foi baseado na leitura dos ``abstracts'' dos artigos. 
   Devido a algumas palavras estarem muito na ``moda'' são citados em muitos artigos, apesar de conterem as palavras chaves,
-  mesmo assim não traziam qualquer relevância para a pesquisa. Dessa forma foi criada uma pasta chamada “Rejeitados” 
+  mesmo assim não traziam qualquer relevância para a pesquisa. Dessa forma foi criada uma pasta chamada ``Rejeitados'' 
   para onde foram movidos esses artigos.\\
   Outro critério de exclusão foi a data mais antiga, anteriormente à 2010, com alguma exceção dos artigos clássicos da área.\\
 
@@ -286,13 +288,11 @@ O paradigma dos 5 V’s exemplifica o Big data, este pode ser descrito como:
 	\item[5 --]Valor atribuído aos dados.
 \end{enumerate}
   
-Dentre as mais diversas ferramentas encontradas destacamos Map Reduce, da ``framework'' Hadoop, por ser de livre uso ou ``freeware'' ter grande tolerância `a falhas e fácil implementação, talvez explique a opção de baixo custo.
-A congênere desenvolvida pelo Google também tem seu destaque. Essas são as mais conhecidas dos ``aventureiros'' que estão desbravando o Big Data. Não será uma tarefa trivial inferir e desenvolver novas ferramentas, pois o Big Data tem 
+Dentre as mais diversas ferramentas encontradas destacamos Map Reduce, da ``framework'' Hadoop, por ser de livre uso ``freeware'' e ter grande tolerância `a falhas e fácil implementação, talvez explique a opção de baixo custo para a maioria das empresas e pesquisadores.
+A tecnologia congênere, desenvolvida pelo Google ``Google File System'' também tem seu destaque. Essas são as mais conhecidas dos ``aventureiros'' que estão desbravando o Big Data. Não será tarefa trivial inferir e desenvolver novas ferramentas para o Big Data pois este tem 
 assumido, nos mais recentes anos proporções gigantescas como descrito na tabela 1
 
-
 %Tabela 1
-
 
 \begin{table}[!ht]
 \scriptsize
@@ -315,7 +315,7 @@ Ano & Qtd & Unidade & Múltiplo \\
 \end{tabular}
 \end{table}
 
-Atrelada a essa produção massiva de dados, uma nova onda está sendo vislumbrada, é chamada de ''A terceira onda da Internet''
+Atrelada a essa produção massiva de dados, uma nova onda está sendo vislumbrada, é chamada de ``A terceira onda da Internet''
 , onde coisas se conectam com coisas; produtos nas gôndolas do supermercado com um novo tipo de etiqueta se conectam a uma 
 leitora de radio frequência à alguns metros de distância, contabilizando o total do estoque em segundos; o consumidor leva 
 seus produtos escolhidos ao caixa desse supermercado, pagando a conta sem precisar retirar qualquer produto do carrinho. 
@@ -351,8 +351,8 @@ Outra problema levantado com o waze é que; caso não haja conexão à Internet 
 
 Além dos dados que chegam ao \textit{Big Data} através das redes sociais, o trânsito das grandes cidades têm disponíveis câmeras de monitoramento do trânsito nos semáforos, alguns com cobertura
 por canais de televisão, câmaras de segurança próximos às rodovias também coletam informações, tudo em tempo real. Os dados desses dispositívos geralente são gravados sendo conhecidos como \textit{stream} de dados. 
-Esses \textit{streams} podem estar disponibilizados na Internet em sítios eletrônicos especialmente construídos para isso, como o
-< http://vejoaovivo.com.br/ > e outros.
+Esses \textit{streams} podem estar disponibilizados na Internet em sítios eletrônicos especialmente construídos para isso, como o ``vejaaovivo''
+\footnote{\textit{http://vejoaovivo.com.br} sítio eletrônico onde encontram-se imagens de câmeras de trânsito em tempo real} e outros.
 
 Os dados disponibilizados pelos diversos meios de comunicação não estão em formato que possam ser utilizados imediatamente, precisam antes serem processados. Esses dados não processados são conhecidos como ``dados frios''.
 O processo de tratar as informações, retirando-lhes o ``lixo''; transformando dados ``frios'' em dados ``quentes'', é um processo que tem um custo temporal elevado, devido ao volume dos dados.
@@ -377,8 +377,9 @@ Chaves e valores podem ser da forma de dados primitivos; como inteiros, ponto fl
 
 \subsection{Hadoop - Map Reduce - Big Data}\label{arte:palavraChave:HadoopMapReduce}
 
-O \textit{Big Data}, devido à sua natureza, foi definido como o paradígma dos 5 V's entre as grandezas: \textbf{Volume}, \textbf{Velocidade}, \textbf{Variedade}, \textbf{Veracidade} e \textbf{Valor}.
-O roteiro seguido pela informação desde o local onde é produzida até que possa ser utilizada é  exemplificado na imagem a seguir:
+O \textit{Big Data}, devido à sua natureza, foi definido como o paradigma dos 5 V's entre as grandezas: \textbf{Volume}, \textbf{Velocidade}, \textbf{Variedade}, \textbf{Veracidade} e \textbf{Valor}.
+O roteiro seguido pela informação desde o local onde é produzida até onde 
+possa ser utilizada é exemplificado na imagem a seguir:
 
 \begin{figure}[ht]
 \centering
@@ -394,8 +395,7 @@ O Haddop funciona com um agrupamento em paralelo desses computadores, conhecido 
 
 \subsection{Map Reduce - Big Data}\label{arte:palavraChave:MapReduceBigData}
 
-
-O Map-Reduce é uma técnica conhecida desde a linguagem Lisp, que permite mapear o \textit{cluster} e reduzir conforme um par de informações \<chave:valor\>. 
+O Map-Reduce é uma técnica conhecida desde a linguagem Lisp, que permite Mapear (Map) um conjunto de informações como palavras, imagens, paginas na Internet através do agrupamentos de milhares de computadores conhecido como \textit{cluster} e mesclar essas informação conhecida como reduzir (Reduce) conforme um par de informações \{ chave:valor \} .  
 O Hadoop implementa o paradigma MapReduce
 
 A imagem a seguir exemplifica a técnica Map-Reduce:
@@ -406,22 +406,22 @@ A imagem a seguir exemplifica a técnica Map-Reduce:
 \includegraphics[width=100mm, height=80mm]{Figuras/MapReduce.jpg}
 \end{figure}
 
-Durante a operação de Map podem estar envolvidos \textit{clusters} de até 3.000 computadores, caso seja utilizada a infraestrutura Hadoop. Na etapa de Recude o \textit{cluster} cai consideravelmente, conduto o consumo de energia é bantante considerável. \cite{Conejero2015}
-Este modelo de Map-Reduce, foi o modelo de computação paralela, proposto pelo Google para ser utilizado na Internet \cite{Dean2008}.
+Durante a operação de ``Map'' podem estar envolvidos \textit{clusters} de até 3.000 computadores ``espalhados'' pela Internet, caso seja utilizada a infraestrutura Hadoop sem virtualização. Na etapa de ``Recude'' o \textit{cluster} cai consideravelmente, contudo o consumo de energia nessas duas etapas consideravelmente alto. \cite{Conejero2015}
+Este modelo de Map-Reduce, é um modelo de computação paralelizada proposto pelo Google para ser utilizado na Internet \cite{Dean2008}.
 
-Muitas técnicas tem sido utilizadas para executar a operação de MAP, até virtualização de máquinas, contudo o grande poder do MapReduce está no \textit{cluster} que é implementado com arquitetura em nuvem \textit{Cloud Computing}.
+Muitas técnicas tem sido utilizadas para executar a operação de MAP, até virtualização de máquinas, contudo o grande poder do MapReduce está no \textit{cluster} que é implementado com arquitetura em nuvem \textit{Cloud Computing} onde os computadores com \textit{File System} HDFS se comunicam entre si para formar um agrupamento.
 
 
->>>> artigo: A Modified Key Partitioning for BigData Using MapReduce in Hadoop
+\{aqui tirar do artigo: A Modified Key Partitioning for BigData Using MapReduce in Hadoop\}
 
 \section{Data Mining}
 
 Técnicas de mineração de dados trabalham com dados estruturados, para poder extrair informações relevantes.
-Um dos maiores problemas na extração de informações são os ``missing data'' ou dados ausentes. 
+Um dos maiores problemas na extração de informações são os ``missing data'' ou dados ausentes. Para contornar os dados ausentes exitem varias técnicas como preenchimento dos dados através de técnicas de inteligencia artificial.
 
-O caminho da extração dos dados até a mineração dados e por fim extração de conhecimento é longa, na figura a seguir temos um exemplo desse caminho:
+O caminho da extração dos dados até sua mineração e por fim extração de conhecimento é longa, na figura a seguir temos um exemplo desse caminho:
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
 \centering
 \caption{Minerando dados no Big Data}
 \flushleft
@@ -429,12 +429,57 @@ O caminho da extração dos dados até a mineração dados e por fim extração 
 \end{figure}
 
 
-O Big data está repleto em dados ausentes e inconsistentes. Algumas técnicas de mineração de dados são fortemente influenciadas pelas informações de entrada, dentre elas as Árvores de decisão ou ``Decision Tree'', para tanto utilizar essa técnica para extrair informações do Big data pode causar levar a inconsistências incontornáveis.
-Utilizar técnicas de mineração de dados é para além de extrair dados, é extrair conhecimento e com isso poder predizer os resultados à saída aquando determinados dados à entrada ocorrem. \cite{Amin2015}
+O Big data está representado, na imagem, onde se lê ``Data'', repleto em dados ausentes e/ou inconsistentes por isso conhecidos como dados não estruturados. Os balão onde se lê ``Selection'' representa a coleta das informações, para este artigo representa a seleção dos dados no Big Data vindos das mais diversas fontes, tais como, redes sociais, câmaras de trânsito, informações de satélites meteorológicos e muitas outras fontes. Armazenar qualquer quantidade de dados nessa etapa pode ser um grande problema, devido a quantidade, como mencionado anteriormente, porém os dados relevantes podem ser armazenados em ``Target Data'' com Hadoop e as técnicas de ``Map'' e ``Reduce'' poder-se-ia agrupar (clustering) informações ou ler os fluxos de dados (stream data) algumas técnicas de IA podem ser aplicadas nessa etapa, como ``Data Mininng Swarm Robotics'' através de Botnets e ``Swarm Intelligence''. No balão ``Preprocessing'' ainda são dados não-estruturados, para estruturá-los é preciso técnicas linguísticas pois existe lógica entre eles \cite{Aranha2006}. Esses dados normalmente são coletados por técnicas de Mineração de Textos ou Mineração de Dados em Textos, mais uma vez técnicas de IA como ``Machine Learning'' como será descrito mais adiante. Uma vez transformados os dados em ``Transformation'' esses dados, já estruturados podem ser armazenados em Bancos de Dados conhecidos como Datawarehouse a exemplo do Hive, descrito na Figura 4. O processo de Mineração dos dados começa no balão ``Data Mining''. Nessa etapa são aplicados outros técnicas de IA como ``Decion Tree'', ``Artificial Neural Network'', ``Logistic Regression'', ``Deep Learning'' e muitas outras técnicas de classificação e extração de padrões. Todas essas etapas, na mineração de dados são recorrentes como indicam as setas pontilhadas. Algumas técnicas de mineração de dados são fortemente influenciadas pelas informações à entrada, como as Árvores de decisão ou ``Decision Tree'' \cite{DecisionTree} e Redes Neurais para minerar dados teriam milhares de neurônios na camada intermediária o que inviabilizaria a técnica aplicada a este contexto, portanto utilizar essas duas técnicas, para extrair informações do Big data, pode levar a inconsistências incontornáveis.
+
+\vspace{0.1cm}
+
+Utilizar técnicas de mineração de dados é para além de extrair dados, extrair conhecimento do negócio que se está analisando e com isso poder predizer os resultados futuros à saída do modelo, aquando determinados dados à entrada ocorrem. \cite{Amin2015}, essa técnica de extração de conhecimento chama-se \textit{Knowledge Discovery Databases} (KDD).
 
 
 \subsection{Data Mining - Big Data}\label{arte:palavraChave:DataMiningBigData}
 
+Minerar dados no Big data pode não ser uma tarefa atômica, devendo ser divida entre vários tarefas com vários processos em cada uma delas, como descrito anteriormente, pois os dados coletados até chegar a etapa de análise precisam ser tratados. Extrair conhecimento dos dados não processados não faz sentido, tratá-los só ``per si'' exige muito trabalho de IA como Mineração de dados em textos. Mineração em textos é inspirado em técnicas de ``Machine Learning'' \cite{Aranha2006}. Contudo analisar textos é basicamente entender o significado do texto, baseado em regras de associação lógica, o mapa mental a seguir mostra um modelo de análise de texto feito por seres humanos.
+
+\begin{figure}[!ht]
+\centering
+\caption{Mapa mental de análise de textos}
+\flushleft
+\includegraphics[width=90mm, height=60mm]{Figuras/Analise_Textos.png}
+\end{figure}
+
+Existem diversos técnicas algorítmicas para isso. No entanto todas elas necessitam que os dados sejam checados e validados constantemente, essa técnica é conhecida como ``CRoss Indrustry Standard Process for Data Mining'' (CrIP-DM). A figura a seguir exemplifica.
+
+\begin{figure}[!ht]
+\centering
+\caption{Minerando dados no Big Data}
+\flushleft
+\includegraphics[width=70mm, height=60mm]{Figuras/CrispDM.png}
+\end{figure}
+
+O \textbf{Entendimento do negócio} é uma fase crucial da mineração, onde um especialista (ou muitos) deve ser consultado, pois o analista de dados geralmente consegue fazer re-uso de conhecimento lendo periódicos e artigos, mas o especialista no negócio é um profissional essencial e deve estar com anos de experiência no negócio.
+Passada essa fase de Entendimento do Negócio o analista de dados poderá passar a fase do \textbf{Entendimento dos dados}, nesta fase o analista de dados ``olha'' para os dados com acurácia procurando identificar a qualidade dos dados. Dados ausentes são comuns em bancos de dados não estruturados, os``missing data'' são sempre um problema a ser considerado, pode consumir muito tempo do analista de dados. 
+Após superar a fase do entendimento do negócio o analista de dados passará a fase da \textbf{Preparação dos dados}, esta fase cobre a construção final do conjunto de dados, preparar os dados significa criar selecionar atributos criar tabelas e registros dos dados. 
+Na fase de \textbf{Modelagem de I.A.} a tecnologia deve ser escolhida com critério baseado em experiência do analista de dados. Em sistemas que exijam apoio a decisão uma tecnologia inadequada pode levar a decisões erradas, é comum retornar as fases anteriores para se adequar `as técnicas aos dados, por exemplo um modelo de regressão logística para problemas binários andam juntos na maioria dos sistemas, redes neurais andam juntos com problemas de classificação e assim por diante, contudo sempre há espaço para novas tecnologias e sobre tudo hibridização nas tenologias. ver figura a seguir:
+
+\begin{figure}[!ht]
+\centering
+\caption{Modelo de IA baseado em ``Decision Tree'' para o Big Data}
+\flushleft
+\includegraphics[width=90mm, height=50mm]{Figuras/workflow.png}
+\end{figure}
+
+Um conjunto de treinamento de ser preparado na fase anterior, para se fazer testes aos algorítimos dos Modelos de IA, contudo isso somente serve para se medir o acerto e a acurácia do modelo utilizado.
+
+Métricas deverão ser propostas na fase de avaliação de desempenho pois minerar dados com poucos registros (< 10.000) não costumam construir bons sistemas suporte a decisão baseados em de mineração de dados.
+\textbf{Avaliação de desempenho} em mineração de dados um ou muitos modelos devem ter sido construídos e testados e com alta qualidade da perspectiva da analise  dos dados.
+Criar um modelo geralmente não é o fim do negócio, contudo é criar um modelo de entendimento do negócio. Até que se obtenha as respostas satisfatórias o modelo deverá ser refeito várias vezes até sua \textbf{Implantação}. A imagem a seguir descreve o domínio das técnicas aplicadas à mineração de dados:
+
+\begin{figure}[!ht]
+\centering
+\caption{Domínio das técnicas aplicadas a mineração de dados}
+\flushleft
+\includegraphics[width=90mm, height=50mm]{Figuras/RelacaoCrispKddDm.png}
+\end{figure}
 
 
 
@@ -469,8 +514,8 @@ um enxame de pássaros. Os 5 princípios da inteligência de enxame segundo  Cha
 	\item{Adaptabilidade: capacidade de se adequar as variações ambientais}
 \end{itemize}
 
-\quad
-\flushleft \textbf{Swarm Optimization - (PSO)}
+\vspace{0.3cm}
+\textbf{Swarm Optimization - (PSO)}
 \vspace{0.1cm}
 
 Kennedy e Eberhart (1995), criaram a popular Otimização por Enxame de Partículas do inglês \textit{Particle Swarm Optimization} - (PSO), 
@@ -493,19 +538,45 @@ Onde $x_1(t)$ é a posição da partícula num determinado momento ``t''. O $x_i
 A velocidade da partícula é de acordo com a equação:
 
 \begin{equation}
-v_i(t+1) = v_i(t) + Nbest + Lbest
+	v_i(t+1) = v_i(t) + Nbest + Lbest
 \end{equation}
 
-\flushleft $Nbest = c_1r_1j(t)[Nbest - x_i(t)]$
-\flushleft $Lbest = c_2r_2j[Lbest - x_i(t)]$\\
+$Nbest = c_1r_1j(t)[Nbest - x_i(t)]$
+
+$Lbest = c_2r_2j(t)[Lbest - x_i(t)]$
+\vspace{0.2cm}
 
 Onde $v_i(t)$ é a velocidade num momento ''t'' qualquer e $v_i(t+1)$ é a velocidade atual da partícula.
 Os coeficientes $c_1r_1j(t)$ e $c_2r_2j$ são números que variam entre 0 e 1 para mudar a posição da partícula.
 O coeficiente $Nbest - x_i(t)$ é a melhor posição da partícula na vizinhança e $Lbest - x_i(t)$ é a melhor posição
 numa região que engloba essa vizinhança.
 
-\quad
-\flushleft \textbf{Ant Colony Optimization - (ACO)}
+
+\vspace{0.3cm}
+ \textbf{Fish School Search - (FSS)}
+\vspace{0.1cm}
+
+
+Para contornar o problema explosão combinatória Carmelo e Buarque propuseram a meta-heurísticas da busca por cardume de peixes
+ou o \textit{Fish School Search} - (FSS) \cite{Filho2008}.
+
+Na busca FSS, cada peixe representa uma possível solução do problema.
+Em busca por enxame de partículas há o problema da degradação do enxame, quando aparentemente as partículas encontram
+um mínimo local (poderia ser máximo - depende da natureza do problema) ''pensando'' terem encontrado o mínimo global.
+Para contornar esse problema da degradação do enxame introduz-se operadores que façam com que o exame saia desses ''fossos''
+de busca.
+O FSS possui operadores para evitar o problema da perda de qualidade, dentre esses podemos citar o operador de volatilidade, 
+que faz com que o enxame expanda quando o enxame se concentra por muito tempo.
+
+A equação que faz isso é a seguinte:
+
+\begin{equation}
+Bari(t) = \frac{\sum_{i=1}^{N}x_i(t)W_1(t)}{\sum_{i=1}^{N}x_i(t)}
+\end{equation}
+
+
+\vspace{0.3cm}
+\textbf{Ant Colony Optimization - (ACO)}
 \vspace{0.1cm}
 
 A optimização por colônia de formigas ou \textit{Ant Colony Optimization} - (ACO) é uma técnica de otimização que foi
@@ -527,24 +598,64 @@ p(i,j)= \frac{[\tau (i,j)]^{\alpha }.[\eta (i,j)]^{\beta}}{\sum [\tau (i,j)]^{\a
 
 
 
-\subsection{Data Mining - Swarm Inteligence}\label{arte:palavraChave:Swarm}
+\subsection{Data Mining - Swarm Intelligence}\label{arte:palavraChave:Swarm}
 
-começar com o artigo: A correlation-based an miner for classification rule discovery
+Recentemente algorítimos de classificação baseados em ``Ant Colony Optimization'' (ACO) tem sido experimentado em mineração de dados\cite{Baig2012} o AntMiner é um deles.
+
+O algorítimo AntMiner utiliza as formigas para gerar regras de classificação. Inicia com regra vazia e incrementalmente adiciona regras, uma de cada vez. A adição de cada termos é probabilística e baseada em dois fatores: a qualidade heurística do termo e a quantidade de feromônio depositado anteriormente pelas formigas. Após a parte antecedente da regra ser construída a parte consequente da regra é assinalada por maior votação da amostra de treinamento coberta pela regra. A regra é construída com podas aos termos irrelevantes para melhorar a acurácia do algorítimo. A qualidade da regra construída é determinada e o valor do feromônio é atualizado na trilha pela formiga, proporcional a qualidade da regra. Quando todas as formigas construírem as regras delas as melhores regras são selecionadas, colocadas numa lista de regras descobertas. A amostra de treinamento corretamente classificada pela regra são removidas do conjunto de treinamento. Esse processo é continuado até que o número de amostras não cobertas é pequeno e o usuário estabeleça um limiar. O produto final é uma lista de regras ordenadas que será usada para classificar um conjunto de testes. A seguir o algoritmo de classificação AntMiner:
+
+\begin{algorithm}
+	\SetAlgoLined
+	\Entrada{$conjTreino = \{todosCasosTreinamento\};$}  
+	\Saida{$DescobrirListaRegras = [];$}
+	\Inicio{
+		\Enqto{$conjTreino > MaxNaoDescoberto$}{
+	 	{$ t = 1$ /*índice de formmigas*/ \\}  
+	 	{$ j = 1$ /*índice de convergência*/\\}
+	 	/*inicializa todas as trilhas com algum feromônio*/\\
+	 		\Repita{$t>= No_ants$ ou $j >= NoRegrasConverg$}{
+	 		 $Ant_t$ /*inicializa com regras em branco e incrementalmente constrói 					um classificados de regras $R_t$ por adição de termos um a um para as 				regras correntes; */\\
+	 		 Podar regras $R_t;$
+	 		 Atualizar o feromônio de todas as trilhas incrementando o feromônio na trilha de cada $Ant_t$ (proporcional à qualidade do $R_t$) e decrementa o feromônio em outras trilhas (simulando a evaporação de feromônio)
+	 		 \Se{$R_t == R_t-1$ /*atualiza a convergência de testes*/\\}{
+	 		 $j = j+1;$\\
+	 		 \Senao{$j = 1;$}
+	 		 }
+	 		 $t = t+1;$
+	 		 }
+	 		 Escolher melhor regra $R_bost$ entre todas as regras $R_t$ construída pelas formigas;
+	 		 Adicione regras $R_{bost}$ para $DescobrirListaRegras;$
+	 		 $conjTreino$ = $conjTreino$ - \{casos correntes cobertos por $R_{bost}$\};
+	 	}
+ 	 }
+   \label{alg1}
+   \caption{\textsc{Ant-Miner}}
+\end{algorithm}
+
 
 \subsection{Data Mining - Swarm Robotics}\label{arte:palavraChave:Robotics}
 
-O rápido crescimento da Internet, tem trazido, a reboque, o contínuo crescimento da insegurança nos computadores e sistemas \cite{Barford2007}.
-Ataques utilizando à computadores através de robôs.
+O rápido crescimento da Internet, tem trazido, a reboque, o contínuo crescimento da insegurança nos computadores e sistemas atuais \cite{Barford2007}.
+Ataques utilizando a computadores através de robôs conhecidos como Botnet é um problema contante para que lida com segurança da informação. No entanto os Botnet podem ter uma vida mais digna, como coletar informações no Big data. O Google se especializou nisso quando utiliza seus ``Spiders''. Esses robôs navegam pela Internet ``devorando'' página e indexando-as para que as buscas do motor de buscas da Google seja mais eficiente. A figura a seguir podemos ver um exemplo desses robôs: \cite{motorBusca}
 
-\subsection{Deep Learning}\label{arte:palavraChave:Deep}
+\begin{figure}[!ht]
+\centering
+\caption{Minerando textos no Big Data com robôs}
+\includegraphics[width=60mm, height=60mm]{Figuras/Motordebusca.png}
+\end{figure}
+
+A utilização desses robôs é uma alternativa eficiente para coletar informações no Big data (ver ``Selection'' Figura 6) já que sua especialidade é essa. Como o Big data tem uma forte componente de inconsistência coletar informações das páginas visitas pelos robôs ou mesmo coletar a página inteira pode ser extremamente eficiente, nos quesitos ``volume'' e ``velocidade'' descrito na seção 6.1 (Hadoop -- Map Reduce -- Big Data). 
+
+
+%\subsection{Deep Learning}\label{arte:palavraChave:Deep}
 
 
 
 \subsection{Machine Learning}\label{arte:palavraChave:Machine}
 
-O desafio dos 3 V's (Velocidade, Variedade e Volume) pode ser um fator determinístico na escolha da ferramenta mais adequada para se analisar dados do \textit{Big Data} e extrair informação. As árvores de decisão são algorimos rápidos, contudo dados impuros podem comprometer o desepenho desse algoritmo. A fase de extração dos dados do \textit{Big Data} são fortemente influenciáveis pelas variáveis escolhidas, \cite{DecisionTree} isso pode representar o desafio maior para implementar esta técnica, na figura a seguir exemplificamos essa tarefa:
+O desafio \textit{Big Data} é resumido por alguns autoes a 3 V's (Velocidade, Variedade e Volume) dado que as informçãoes já tiveram um tratamento adequado (eliminando os últimos V's) contudo Velocidade, Variedade e Volume pode ser um fator determinístico na escolha da ferramenta mais adequada para se analisar dados do \textit{Big Data} e extrair informação. As árvores de decisão são algorimos rápidos, contudo dados impuros podem comprometer o desepenho desse algoritmo. A fase de extração dos dados do \textit{Big Data} são fortemente influenciáveis pelas variáveis escolhidas, \cite{DecisionTree} isso pode representar o desafio maior para implementar esta técnica, na figura a seguir exemplificamos essa tarefa:
 
-desenhar a figura
+%desenhar a figura
 
 % \begin{tikzpicture}
 %  \draw (0,0) -- (2,1); %reta
@@ -554,42 +665,14 @@ desenhar a figura
 
 
 
-\subsection{Fish School Search - (FSS) }\label{arte:algo:fss}
-
-Para contornar o problema explosão combinatória Carmelo e Buarque propuseram a meta-heurísticas da busca por cardume de peixes
-ou o \textit{Fish School Search} - (FSS) \cite{Filho2008}.
-
-Na busca FSS, cada peixe representa uma possível solução do problema (\cite{Filho2008}).
-Em busca por enxame de partículas há o problema da degradação do exame, quando aparentemente as partículas encontram
-um mínimo local (poderia ser máximo - depende da natureza do problema) ''pensando'' terem encontrado o mínimo global.
-Para contornar esse problema da degradação do enxame introduz-se operadores que façam com que o exame saia desses ''fossos''
-de busca.
-O FSS possui operadores para evitar o problema da perda de qualidade, dentre esses podemos citar o operador de volatilidade, 
-que faz com que o enxame expanda quando o enxame se concentra por muito tempo.
-
-A equação que faz isso é a seguinte:
-
-\begin{equation}
-Bari(t) = \frac{\sum_{i=1}^{N}x_i(t)W_1(t)}{\sum_{i=1}^{N}x_i(t)}
-\end{equation}
-
-
-
 
 \section{Resultados esperados}
 
-Este Survey têm diversos propósitos preliminares e também conclusivos, para balizar pesquisas na área, apontando um caminho mais promissor relacionado ao assunto escolhido, no nosso caso “Big Dada”. Um dos propósito é servir de referência científica
-a qualquer de busca por conhecimento científico, mostrando o trabalho que o pesquisador deve ter, o cuidado ao procurar 
-esse conhecimento, sem contaminar-se na ``floresta'' de artigos científicos, dissertações e teses ofertados e, disponíveis
-hodiernamente na Internet. 
+Este Survey têm diversos propósitos preliminares e também conclusivos, para balizar pesquisas na área, apontando um caminho mais promissor relacionado ao assunto escolhido, o Big Dada. Um dos propósito é servir de referência científica a qualquer de busca por conhecimento científico, mostrando o trabalho que o pesquisador deve ter, o cuidado ao procurar 
+esse conhecimento, sem contaminar-se na ``floresta'' de artigos científicos, dissertações e teses ofertados e, disponíveis hodiernamente na Internet. 
 
-Após a conclusão deste Survey, pretende-se incluir, os dados encontrados, no capítulo 2 da dissertação, servindo também 
-de exemplo para todo mestrando que se aventurar na busca “indiscriminada” por artigos, deixando de lado uma parte 
-importante do seu trabalho que são os dados estatísticos dessa fase e que pode ter assim uma abordagem científica já na 
-fase inicial.
-A fase conclusiva, desse Survey, será a certeza de que o melhor caminho escolhido para o desenvolvimento das outras
-fases da dissertação foi baseado em métodos científicos, desde sua fase inicial, ficando disponíveis para outros pesquisadores 
-o ``como`` deve ser todo trabalho de busca por artigos científicos.
+Após a conclusão deste Survey, pretende-se incluir, os dados encontrados, no capítulo 2 da dissertação, servindo também de exemplo para todo mestrando que se aventurar na busca “indiscriminada” por artigos, deixando de lado uma parte importante do seu trabalho que são os dados estatísticos dessa fase e que pode ter assim uma abordagem científica já na fase inicial.
+A fase conclusiva, desse Survey, será a certeza de que o melhor caminho escolhido para o desenvolvimento das outras fases da dissertação foi baseado em métodos científicos, desde sua fase inicial, ficando disponíveis para outros pesquisadores o ``como'' deve ser todo trabalho de busca por artigos científicos.
 
 
 \section{Conclusão}
@@ -680,7 +763,7 @@ isbn = {978-85-7522-278-2},
 pages = {153--162},
 year = {2012}
 
-%8.1
+%9
 \bibitem{Conejero2015}
 Conejero, Javier and Rana, Omer and Burnap, Peter and Morgan, Jeffrey and Caminero, Blanca and Carri{\'{o}}n, Carmen,
 title = {{Analysing Hadoop power consumption and impact on application QoS}},
@@ -692,8 +775,7 @@ year = {2015}
 \href{http://linkinghub.elsevier.com/retrieve/pii/S0167739X15000643}{HadoopMapreduce}
 
 
-
-%8.2
+%10
 \bibitem{Lange2015}
 Lange, Benoit and Nguyen, Toan
 title = {{A Hadoop use case for engineering data}},
@@ -701,10 +783,9 @@ mendeley-groups = {DataMiningBigData},
 year = {2015}
 
 
-
-%9
+%11
 \bibitem{Dean2008}
-Dean, Jeffrey and Ghemawat, Sanjay,
+Dean, Jeffrey and Ghemawat, Sanjay
 institution = {Google, Inc.},
 issn = {00010782},
 journal = {Communications of the ACM},
@@ -719,7 +800,22 @@ year = {2008}
 \href{http://portal.acm.org/citation.cfm?id=1327492}{MapReduce}
 
 
-%9.1
+%12
+\bibitem{Aranha2006}
+Aranha, Christian and Passos, Emmanuel,
+A Tecnologia de Mineração de Textos,
+booktitle = {RESI-Revista Eletrônica de Sistemas de Informações},
+doi = {10.5329/171},
+issn = {1677-3071},
+keywords = {Data minig,Intelligent information systems},
+mendeley-groups = {Mineração Textos},
+number = {2},
+pages = {1--8},
+volume = {2},
+year = {2006}
+
+
+%13
 \bibitem{Amin2015}
 Amin, Adnan and Faisal, Rahim and Imtiaz, Ali and Changez, Khan and Anwar, Sajid,
 title = {{A Comparison of Two Oversampling Techniques (SMOTE vs MTDF) for Handling Class Imbalance Problem: A Case Study of Customer Churn Prediction}},
@@ -734,7 +830,7 @@ year = {2015},
 
 
 
-%10
+%14
 \bibitem{Barford2007}
 Barford, Paul and Yegneswaran, Vinod,
 title = {{An inside look at Botnets}},
@@ -748,28 +844,13 @@ year = {2007}
 \href{http://www.springerlink.com/index/10.1007/978-0-387-44599-1}{Botnet}
 
 
-%11
-\bibitem{DecisionTree}
-A. Srivastava, V. Katiyar and N. Singh -- Review of Decision Tree Algorithm: Big Data Analytics,
-International Journal of Informative \& Futuristic Research,
-number = {10},
-pages = {3644--3654},
-volume = {2},
-year = {2015}
-
-%12
-\bibitem{chambers2014computer}
-W. D. Chambers (2014).
-\emph{Computer simulation of dental professionals as a moral community. Medicine, Health Care and Philosophy}
-\relax  17(3), 467–476.
-
-%13
+%17
 \bibitem{Kennedy1995}
 J. Kennedy and R. Eberhart (1995). 
 \emph{Particle swarm optimization. In Neural Networks, 1995. Proceedings.}
 IEEE International Conference on (Vol. 4, pp. 1942–1948 vol.4). http://doi.org/10.1109/ICNN.1995.488968
 
-%14
+%18
 \bibitem{Blum2005}
 C. Blum
 \emph{Ant colony optimization}
@@ -783,7 +864,7 @@ pages: {353--373},
 volume: {2},
 year {2005}
 
-%15
+%19
 \bibitem{Dorigo2005}
 M. Dorigo and C. Blum,
 \emph{Ant colony optimization theory: A survey},
@@ -797,7 +878,7 @@ pages: {243--278},
 volume: {344},
 year: {2005}
 
-%16
+%20
 \bibitem{Filho2008}
 Filho, Carmelo J A Bastos and Neto, Fernando B De Lima and Lins, Anthony J C C and Nascimento, Ant\^{o}nio I S and Lima, Mar\'{\i}lia P.
 booktitle: {Conference Proceedings - IEEE International Conference on Systems, Man and Cybernetics},
@@ -809,11 +890,51 @@ keywords: {Fish school,Search algorithms,Social behaviour,Swarm intelligence},
 pages: {2646--2651},
 year: {2008}
 
-%17
+%21
+\bibitem{Baig2012}
+Baig, Abdul Rauf and Shahzad, Waseem,
+doi = {10.1007/s00521-010-0490-5},
+title = {{A correlation-based ant miner for classification rule discovery}},
+issn = {09410643},
+journal = {Neural Computing and Applications},
+keywords = {Ant colony optimization (ACO),Classification rules,Data mining,Swarm intelligence},
+mendeley-groups = {DataMiningSwarnIntelligence},
+number = {2},
+pages = {219--235},
+volume = {21},
+year = {2012}
+
+
+%14.1
+\bibitem{motorBusca}
+Fonte: Chaffey,
+page = 378,
+year=2006
+
+
+%15
+\bibitem{DecisionTree}
+A. Srivastava, V. Katiyar and N. Singh -- Review of Decision Tree Algorithm: Big Data Analytics,
+International Journal of Informative \& Futuristic Research,
+number = {10},
+pages = {3644--3654},
+volume = {2},
+year = {2015}
+
+%16
+\bibitem{chambers2014computer}
+W. D. Chambers (2014).
+\emph{Computer simulation of dental professionals as a moral community. Medicine, Health Care and Philosophy}
+\relax  17(3), 467–476.
+
+
+
+
+%22
 \bibitem{madeira}
 Madeira, Lamont. Hoje a internet, amanhã os desafios da internet das coisas. 2011.
 
-%18
+%23
 \bibitem{mayumi}
 MAYUMI, Danielle. Computação nas nuvens – O futuro da internet. 2011.
 
